@@ -1,4 +1,3 @@
-" sonokai 
 call plug#begin()
 "--------------Regular----------------------
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -11,8 +10,9 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
 Plug 'lipingcoding/autoim.vim'
 Plug 'nvim-lua/plenary.nvim'
-
+Plug 'rlue/vim-barbaric' " 中英输入法切换
 "--------------Tiny-Tools----------------------
+" Plug 'github/copilot.vim'
 Plug 'yaocccc/nvim-hlchunk'
 Plug 'glepnir/zephyr-nvim'
 Plug 'folke/lsp-colors.nvim'
@@ -25,10 +25,19 @@ Plug 'skywind3000/vim-cppman'
 Plug 'scrooloose/nerdcommenter'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'skywind3000/asynctasks.vim'
+"Markdown{{{
+Plug 'godlygeek/tabular'
+Plug 'SirVer/ultisnips',{'for':'markdown'}
+" Plug 'mzlogin/vim-markdown-toc'
+" Plug 'plasticboy/vim-markdown'
+" Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+" Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+"}}}
 "--------------highlight----------------------
-Plug 'bling/vim-airline'
+" Plug 'bling/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
 Plug 'lambdalisue/glyph-palette.vim'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'
@@ -66,8 +75,11 @@ Plug 'morhetz/gruvbox'
 "Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 call plug#end()
 
-
 "--------------------------- Settings -------------------------------------
+let g:python_host_skip_check=1
+let g:python_host_prog = '/usr/bin/python'
+let g:python3_host_skip_check=1
+let g:python3_host_prog = '/usr/bin/python3'
 set foldmethod=indent " 设置默认折叠方式为缩进
 set foldlevelstart=99 " 每次打开文件时关闭折叠
 filetype on
@@ -88,7 +100,8 @@ set updatetime=300
 set expandtab
 set smartindent
 set cursorline
-set nu rnu
+" set nu rnu
+set rnu
 "set conceallevel=3
 set laststatus=2
 set noshowmode
@@ -123,19 +136,38 @@ let g:autoim_toggle_shortcut = 'ctrl_space'
 
 " <Ctrl-l> redraws the screen and removes any search highlighting.
 nnoremap <silent> <C-l> :nohl<CR><C-l>
-" nnoremap <silent> <C-h> :History<CR><C-h>
+nnoremap <silent> <C-h> :History<CR><C-h>
 "---------------------------Settings------------------------------------------
+
+"-----------------------------------------------------------------------------
+"plugin markdown 
+"-----------------------------------------------------------------------------
+let g:vim_markdown_math = 1
+let g:mkdp_path_to_chrome='/usr/bin/google-chrome'
+"-----------------------------------------------------------------------------
+"-----------------------------------------------------------------------------
+"plugin lightline
+"-----------------------------------------------------------------------------
+let g:lightline = {
+      \ 'colorscheme': 'one',
+      \}
+set noshowmode
+"-----------------------------------------------------------------------------
 
 "-----------------------------------------------------------------------------
 "plugin floaterm 
 "-----------------------------------------------------------------------------
 "split('leftabove', 'aboveleft', 'rightbelow', 'belowright', 'topleft', 'botright')
 "float('top', 'bottom', 'left', 'right', 'topleft', 'topright', 'bottomleft', 'bottomright', 'center', 'auto'(at the cursor place)) 
-let g:floaterm_width=0.4
+let g:floaterm_width=0.3
+let g:floaterm_height=0.3
 let g:floaterm_wintype='vsplit' 
 let g:floaterm_position='belowright'
 " let g:floaterm_keymap_new    = '<F7>'
+" let g:floaterm_keymap_prev   = '<F8>'
+" let g:floaterm_keymap_next   = '<F9>'
 let g:floaterm_keymap_toggle = '<F12>'
+autocmd TermOpen * setlocal nonumber norelativenumber
 "-----------------------------------------------------------------------------
 
 
@@ -313,7 +345,7 @@ let g:NERDToggleCheckAllLines = 1
 "plugin - LeaderF
 "-----------------------------------------------------------------------------
 let g:Lf_ShowDevIcons = 1
-"let g:Lf_ShortcutF = '<c-p>'
+" let g:Lf_ShortcutF = '<c-p>'
 "let g:Lf_ShortcutB = '<s-n>'
 "文件搜索
 nnoremap <silent> <space>ff :Leaderf file<CR>
@@ -497,7 +529,8 @@ command! -nargs=0 OR   :call     CocActionAsync('runCommand', 'editor.action.org
 " Add (Neo)Vim's native statusline support.
 " NOTE: Please see `:h coc-status` for integrations with external plugins that
 " provide custom statusline: lightline.vim, vim-airline.
-" set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+autocmd User CocStatusChange redrawstatus
 
 " Mappings for CoCList
 " Show all diagnostics.
@@ -540,13 +573,14 @@ nnoremap <silent> <space>p       :<C-u>CocFzfListResume<CR>
 "nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 "copilot.vim 对原生的 pumvisible() 进行了判定，所以你设置的 tab 可以正常工作，如果你需要 tab 优先执行切换选项，而不是完成 copilot 的选项
-"let g:copilot_no_tab_map = v:true
-"inoremap <silent><expr> <TAB>
-"      \ coc#pum#visible() ? coc#pum#next(1):
-"      \ exists('b:_copilot.suggestions') ? copilot#Accept("\<CR>") :
-"      \ CheckBackSpace() ? "\<Tab>" :
-"      \ coc#refresh()
-" rename
+" let g:copilot_no_tab_map = v:true
+" inoremap <silent><expr> <TAB>
+"       \ coc#pum#visible() ? coc#pum#next(1):
+"       \ exists('b:_copilot.suggestions') ? copilot#Accept("\<CR>") :
+"       \ CheckBackSpace() ? "\<Tab>" :
+"       \ coc#refresh()
+
+ "rename
 nmap <leader>rn <Plug>(coc-rename)
 " 打开CocList
 nnoremap <silent> <space>g :<C-u>CocList <CR>
@@ -578,23 +612,18 @@ inoremap <nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(
 set list          " Display unprintable characters f12 - switches
 set listchars=tab:•\ ,trail:•,extends:»,precedes:« " Unprintable chars mapping
 let g:airline_theme = 'onehalfdark'
-"let g:airline_theme = 'gruvbox'
-"set guifont=Powerline_Consolas:h14:cANSI
-"let g:airline_solarized_bg='dark'
-" set guifont=Liberation\ Mono\ for\ Powerline\ 10
 let g:airline_powerline_fonts = 1
 let g:Powerline_symbols='fancy'
 let g:airline#extensions#tabline#enabled = 1
-"let g:airline#extensions#tabline#buffer_nr_show = 1
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = ' '
+let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline#extensions#tabline#left_sep = ''
+let g:airline#extensions#tabline#left_alt_sep = ''
 let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
-
-
-let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+" let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#whitespace#symbol = '!'
 let g:airline#extensions#whitespace#enabled = 0
@@ -655,12 +684,16 @@ let g:gutentags_trace = 0
 "-----------------------------------------------------------------------------
 func! s:my_colors_setup() abort
     " this is an example
-      "hi CocInfoFloat ctermfg=242 ctermbg=8 guifg=darkgrey guibg=black
-      "hi PMenu ctermfg=0 ctermbg=242 guifg=black guibg=darkgrey
-      "hi PMenuSel ctermfg=242 ctermbg=8 guifg=darkgrey guibg=black
-     "" hi Cocmenu guibg= #d7e5dc gui=NONE
-     "" hi CocmenuSel guibg= #b7b7b7  gui=NONE
-     "" hi CocmenuSbar guibg=#bcbcbc
+      " hi CursorLine guibg=#44505c guifg=fg
+      hi LineNr guibg=None
+      hi VertSplit guibg=bg guifg=bg
+      hi CocTreeSelected guibg=#637080 guifg=fg
+      hi CocInfoFloat ctermfg=242 ctermbg=8 guifg=darkgrey guibg=black
+      hi PMenu ctermfg=0 ctermbg=242 guifg=#44505c guibg=darkgrey
+      hi PMenuSel ctermfg=242 ctermbg=8 guifg=darkgrey guibg=#44505c
+      hi Cocmenu guibg= #d7e5dc gui=NONE
+      hi CocmenuSel guibg= #b7b7b7  gui=NONE
+      hi CocmenuSbar guibg=#bcbcbc
       hi CocSearch  guifg=#18A3FF
       hi CocMenuSel  guibg=#637080
       hi CocFloating  guibg=#44505c
@@ -672,6 +705,12 @@ endfunc
 augroup colorscheme_coc_setup | au!
     au ColorScheme * call s:my_colors_setup()
 augroup END
+
+autocmd ColorScheme *
+  \ hi CocExplorerNormalFloatBorder guifg=#dcdfe4 guibg=#313640 
+  \ | hi CocExplorerNormalFloat guibg=#313640
+  \ | hi CocExplorerSelectUI guibg=#dcdfe4 
+" #282c34
 
 "#b7b7b7 #d7e5dc 4f5b66
 
@@ -700,7 +739,7 @@ endfunction
 
 let g:coc_explorer_global_presets = {
 \   '.vim': {
-\     'root-uri': '~/.vim',
+\     'root-uri': '~/.config/nvim',
 \   },
 \   'cocConfig': {
 \      'root-uri': '~/.config/coc',
@@ -735,6 +774,10 @@ let g:coc_explorer_global_presets = {
 \     'open-action-strategy': 'sourceWindow',
 \   },
 \   'simplify': {
+\     'position': 'floating',
+\     'floating-position': 'left-center',
+\     'floating-width': 40,
+\     'open-action-strategy': 'sourceWindow',
 \     'file-child-template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
 \   },
 \   'buffer': {
@@ -743,14 +786,16 @@ let g:coc_explorer_global_presets = {
 \ }
 "-----------------------------------------------------------------------------
 
+
 " Use preset argument to open it
-nmap <space>ed <Cmd>CocCommand explorer --preset .vim<CR>
-nmap <space>e <Cmd>CocCommand explorer --preset floating<CR>
+nmap <space>ev <Cmd>CocCommand explorer --preset .vim<CR>
 nmap <space>ec <Cmd>CocCommand explorer --preset cocConfig<CR>
-nmap <space>eb <Cmd>CocCommand explorer --preset buffer<CR>
-nmap <F2> <Cmd>CocCommand explorer --position left<CR>
+" nmap <space>eb <Cmd>CocCommand explorer --preset buffer<CR>
+nmap <F2> <Cmd>CocCommand explorer --position  left --width 30<CR>
+" nmap <F3> <Cmd>CocCommand explorer --preset simplify<CR>
 nmap ]s <Cmd>CocCommand document.jumpToNextSymbol<CR>
 nmap [s <Cmd>CocCommand document.jumpToPrevSymbol<CR>
+nnoremap <space>ef <Cmd>CocCommand explorer --preset simplify<CR>
 
 " List all presets
 nmap <space>el <Cmd>CocList explPresets<CR>
@@ -771,23 +816,20 @@ if exists('+termguicolors')
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
 endif
-let g:gruvbox_contrast_dark='hard'
 
 syntax enable
 set bg=dark
-autocmd vimenter * ++nested colorscheme one-nvim
-autocmd ColorScheme *
-  \ hi CocExplorerNormalFloatBorder guifg=#dcdfe4 guibg=#282c34
-  \ | hi CocExplorerNormalFloat guibg=#282c34
-  \ | hi CocExplorerSelectUI guibg=#282c34
 " colorscheme nightfox "terafox, nordfox, duskfox, dawnfox, dayfox, nightfox
 "autocmd vimenter * ++nested colorscheme onedark
+colorscheme onehalfdark
+highlight Normal guibg=NONE ctermbg=None
 
 
 "--------------------------- Neovide -------------------------------------
 if exists("g:neovide")
     " Put anything you want to happen only in Neovide here
     set guifont=Hack\ Nerd\ Font\ Mono:h15
+    set clipboard+=unnamed 
     set linespace=0
     let g:neovide_scale_factor=1.0
     function! ChangeScaleFactor(delta)
@@ -812,7 +854,7 @@ if exists("g:neovide")
 "    let g:neovide_background_color = '#0f1117'.printf('%x', float2nr(255 * g:transparency))
 
 endif
-"--------------------------- Neovide -------------------------------------
+" autocmd vimenter * ++nested colorscheme onehalfdark
 
 
 

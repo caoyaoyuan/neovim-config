@@ -2,12 +2,14 @@
   "semanticTokens.enable": true,
   "outline.autoPreview": false,
   "list.source.files.defaultOptions": ["--number-select"],
-  "suggest.formatItems": ["kind","abbr","menu", "shortcut"],//["abbr", "menu", "kind", "shortcut"],
+  "suggest.formatItems": ["kind","abbr","menu"],//["abbr", "menu", "kind", "shortcut"],
   "suggest.defaultSortMethod": "length",
   "suggest.autoTrigger": "always",
   "outline.autoWidth": true,
   "outline.previewMaxWidth": 50,
   "diagnostic.refreshOnInsertMode": true,
+  "explorer.file.child.template": "[selection | clip | 1] [indent][icon | 1] [diagnosticError & 1][filename omitCenter 1][modified][readonly] [linkIcon & 1][link growRight 1 omitCenter 5]",
+  "explorer.width": 35,
 
   "explorer.icon.source": "vim-devicons",
   "explorer.icon.enableNerdfont": true,
@@ -18,8 +20,6 @@
   "python.pythonPath": "/home/joe/Anaconda/envs/yolov5/bin/python",
   "diagnostic.warningSign": "󰔶",
   "diagnostic.errorSign": "",
-  //"diagnostic.warningSign": "\ue00a",
-  //"diagnostic.errorSign": "\ue009",
   "translator.proxy": "socks://127.0.0.1:1080",
   "translator.engines": ["bing", "youdao"],
   "suggest.noselect": false,
@@ -29,7 +29,7 @@
   "suggest.virtualText": false,
   "cmake.lsp.enable": true,
   "list.source.files.args": ["--hidden", "--files"],
-  "clangd.fallbackFlags": ["-I${workspaceForlder}"],
+  "clangd.fallbackFlags": ["-I${workspaceForlder}", "-std=c++17"],
   "languageserver": {
     "go": {
       "command": "gopls",
@@ -63,7 +63,7 @@
   "git.removedSign.text": "_",
   "git.topRemovedSign.text": "‾",
   "git.changeRemovedSign.text": "≃",
-  "coc.preferences.formatOnSaveFiletypes": [".py", ".json"],
+  "coc.preferences.formatOnSaveFiletypes": [".py", ".json", "markdown"],
   "suggest.completionItemKindLabels": {
     "function": "󰊕",
     "method": "",
