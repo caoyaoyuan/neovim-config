@@ -686,7 +686,7 @@ func! s:my_colors_setup() abort
     " this is an example
       " hi CursorLine guibg=#44505c guifg=fg
       hi LineNr guibg=None
-      hi VertSplit guibg=bg guifg=bg
+      hi VertSplit guibg=bg guifg=fg
       hi CocTreeSelected guibg=#637080 guifg=fg
       hi CocInfoFloat ctermfg=242 ctermbg=8 guifg=darkgrey guibg=black
       hi PMenu ctermfg=0 ctermbg=242 guifg=#44505c guibg=darkgrey
