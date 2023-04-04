@@ -9,15 +9,12 @@
   "outline.previewMaxWidth": 50,
   "diagnostic.refreshOnInsertMode": true,
   "explorer.file.child.template": "[selection | clip | 1] [indent][icon | 1] [diagnosticError & 1][filename omitCenter 1][modified][readonly] [linkIcon & 1][link growRight 1 omitCenter 5]",
-  "explorer.width": 35,
-
   "explorer.icon.source": "vim-devicons",
   "explorer.icon.enableNerdfont": true,
-  //"explorer.position": "floating",
-
   "inlayHint.enable": false,
   "colors.filetypes": ["*"],
-  "python.pythonPath": "/home/joe/Anaconda/envs/yolov5/bin/python",
+  "python.pythonPath": "/home/joe/Anaconda/bin/python",
+  "pyright.disableDiagnostics": true,
   "diagnostic.warningSign": "󰔶",
   "diagnostic.errorSign": "",
   "translator.proxy": "socks://127.0.0.1:1080",
@@ -29,15 +26,13 @@
   "suggest.virtualText": false,
   "cmake.lsp.enable": true,
   "list.source.files.args": ["--hidden", "--files"],
-  "clangd.fallbackFlags": ["-I${workspaceForlder}", "-std=c++17"],
+  "clangd.fallbackFlags": ["-I${workspaceForlder}", "-rdynamic"],
+  "go.goplsOptions": {
+      "hoverKind": "SynopsisDocumentation",
+      "linksInHover": false,
+      "completeUnimported": true
+  },
   "languageserver": {
-    "go": {
-      "command": "gopls",
-      "rootPatterns": ["go.mod"],
-      "trace.server": "verbose",
-      "filetypes": ["go"],
-      "args": ["serve", "-debug", "0.0.0.0:8484", "-rpc.trace"]
-    },
     "cmake": {
       "command": "cmake-language-server",
       "filetypes": ["cmake"],

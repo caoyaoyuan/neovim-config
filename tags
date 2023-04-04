@@ -1,0 +1,822 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/b599093f/
+$GTAGSCONF	init.vim	/^let $GTAGSCONF = '\/etc\/gtags\/gtags.conf'$/;"	v
+$GTAGSCONF	init/init_pConfig.vim	/^let $GTAGSCONF = '\/etc\/gtags\/gtags.conf'$/;"	v
+$GTAGSLABEL	init.vim	/^let $GTAGSLABEL = 'native-pygments'$/;"	v
+$GTAGSLABEL	init/init_pConfig.vim	/^let $GTAGSLABEL = 'native-pygments'$/;"	v
+$NVIM_TUI_ENABLE_TRUE_COLOR	init/init-base.vim	/^    let $NVIM_TUI_ENABLE_TRUE_COLOR=1$/;"	v
+.markdown-body	nvim/colors/markdown.css	/^.markdown-body {$/;"	c
+.markdown-body *	nvim/colors/markdown.css	/^.markdown-body * {$/;"	s
+.markdown-body .table-of-contents > ol	nvim/colors/markdown.css	/^.markdown-body .table-of-contents > ol {$/;"	s
+.markdown-body .table-of-contents ol	nvim/colors/markdown.css	/^.markdown-body .table-of-contents ol {$/;"	s
+.markdown-body > *:first-child	nvim/colors/markdown.css	/^.markdown-body > *:first-child {$/;"	s
+.markdown-body > *:last-child	nvim/colors/markdown.css	/^.markdown-body > *:last-child {$/;"	s
+.markdown-body a	nvim/colors/markdown.css	/^.markdown-body a {$/;"	s
+.markdown-body blockquote	nvim/colors/markdown.css	/^.markdown-body blockquote {$/;"	s
+.markdown-body blockquote	nvim/colors/markdown.css	/^.markdown-body blockquote,$/;"	s
+.markdown-body blockquote blockquote	nvim/colors/markdown.css	/^.markdown-body blockquote blockquote {$/;"	s
+.markdown-body code	nvim/colors/markdown.css	/^.markdown-body code {$/;"	s
+.markdown-body code:after	nvim/colors/markdown.css	/^.markdown-body code:after {$/;"	s
+.markdown-body code:before	nvim/colors/markdown.css	/^.markdown-body code:before,$/;"	s
+.markdown-body del	nvim/colors/markdown.css	/^.markdown-body del {$/;"	s
+.markdown-body dl	nvim/colors/markdown.css	/^.markdown-body dl {$/;"	s
+.markdown-body dl	nvim/colors/markdown.css	/^.markdown-body dl,$/;"	s
+.markdown-body dl dd	nvim/colors/markdown.css	/^.markdown-body dl dd {$/;"	s
+.markdown-body dl dd p	nvim/colors/markdown.css	/^.markdown-body dl dd p {$/;"	s
+.markdown-body dl dt	nvim/colors/markdown.css	/^.markdown-body dl dt {$/;"	s
+.markdown-body em	nvim/colors/markdown.css	/^.markdown-body em {$/;"	s
+.markdown-body h1	nvim/colors/markdown.css	/^.markdown-body h1 {$/;"	s
+.markdown-body h1	nvim/colors/markdown.css	/^.markdown-body h1,$/;"	s
+.markdown-body h1 .anchor	nvim/colors/markdown.css	/^.markdown-body h1 .anchor,$/;"	c
+.markdown-body h1:hover .anchor	nvim/colors/markdown.css	/^.markdown-body h1:hover .anchor,$/;"	c
+.markdown-body h2	nvim/colors/markdown.css	/^.markdown-body h2 {$/;"	s
+.markdown-body h2	nvim/colors/markdown.css	/^.markdown-body h2,$/;"	s
+.markdown-body h2 .anchor	nvim/colors/markdown.css	/^.markdown-body h2 .anchor,$/;"	c
+.markdown-body h2:hover .anchor	nvim/colors/markdown.css	/^.markdown-body h2:hover .anchor,$/;"	c
+.markdown-body h3	nvim/colors/markdown.css	/^.markdown-body h3 {$/;"	s
+.markdown-body h3	nvim/colors/markdown.css	/^.markdown-body h3,$/;"	s
+.markdown-body h3 .anchor	nvim/colors/markdown.css	/^.markdown-body h3 .anchor,$/;"	c
+.markdown-body h3:hover .anchor	nvim/colors/markdown.css	/^.markdown-body h3:hover .anchor,$/;"	c
+.markdown-body h4	nvim/colors/markdown.css	/^.markdown-body h4 {$/;"	s
+.markdown-body h4	nvim/colors/markdown.css	/^.markdown-body h4,$/;"	s
+.markdown-body h4 .anchor	nvim/colors/markdown.css	/^.markdown-body h4 .anchor,$/;"	c
+.markdown-body h4:hover .anchor	nvim/colors/markdown.css	/^.markdown-body h4:hover .anchor,$/;"	c
+.markdown-body h5	nvim/colors/markdown.css	/^.markdown-body h5 {$/;"	s
+.markdown-body h5	nvim/colors/markdown.css	/^.markdown-body h5,$/;"	s
+.markdown-body h5 .anchor	nvim/colors/markdown.css	/^.markdown-body h5 .anchor,$/;"	c
+.markdown-body h5:hover .anchor	nvim/colors/markdown.css	/^.markdown-body h5:hover .anchor,$/;"	c
+.markdown-body h6	nvim/colors/markdown.css	/^.markdown-body h6 {$/;"	s
+.markdown-body h6 .anchor	nvim/colors/markdown.css	/^.markdown-body h6 .anchor {$/;"	c
+.markdown-body h6:hover .anchor	nvim/colors/markdown.css	/^.markdown-body h6:hover .anchor {$/;"	c
+.markdown-body hr	nvim/colors/markdown.css	/^.markdown-body hr {$/;"	s
+.markdown-body img	nvim/colors/markdown.css	/^.markdown-body img {$/;"	s
+.markdown-body kbd	nvim/colors/markdown.css	/^.markdown-body kbd {$/;"	s
+.markdown-body ol	nvim/colors/markdown.css	/^.markdown-body ol {$/;"	s
+.markdown-body ol	nvim/colors/markdown.css	/^.markdown-body ol,$/;"	s
+.markdown-body ol ol	nvim/colors/markdown.css	/^.markdown-body ol ol,$/;"	s
+.markdown-body ol ul	nvim/colors/markdown.css	/^.markdown-body ol ul,$/;"	s
+.markdown-body ol ul ol	nvim/colors/markdown.css	/^.markdown-body ol ul ol,$/;"	s
+.markdown-body ol ul ul	nvim/colors/markdown.css	/^.markdown-body ol ul ul,$/;"	s
+.markdown-body p	nvim/colors/markdown.css	/^.markdown-body p,$/;"	s
+.markdown-body pre	nvim/colors/markdown.css	/^.markdown-body pre {$/;"	s
+.markdown-body pre code	nvim/colors/markdown.css	/^.markdown-body pre code {$/;"	s
+.markdown-body pre code:after	nvim/colors/markdown.css	/^.markdown-body pre code:after {$/;"	s
+.markdown-body pre code:before	nvim/colors/markdown.css	/^.markdown-body pre code:before,$/;"	s
+.markdown-body strong	nvim/colors/markdown.css	/^.markdown-body strong {$/;"	s
+.markdown-body table	nvim/colors/markdown.css	/^.markdown-body table {$/;"	s
+.markdown-body table	nvim/colors/markdown.css	/^.markdown-body table,$/;"	s
+.markdown-body table td	nvim/colors/markdown.css	/^.markdown-body table td {$/;"	s
+.markdown-body table th	nvim/colors/markdown.css	/^.markdown-body table th,$/;"	s
+.markdown-body table tr	nvim/colors/markdown.css	/^.markdown-body table tr {$/;"	s
+.markdown-body table tr:nth-child(2n)	nvim/colors/markdown.css	/^.markdown-body table tr:nth-child(2n) {$/;"	s
+.markdown-body ul	nvim/colors/markdown.css	/^.markdown-body ul {$/;"	s
+.markdown-body ul	nvim/colors/markdown.css	/^.markdown-body ul,$/;"	s
+.markdown-body ul ol	nvim/colors/markdown.css	/^.markdown-body ul ol {$/;"	s
+.markdown-body ul ol	nvim/colors/markdown.css	/^.markdown-body ul ol,$/;"	s
+.markdown-body ul ul	nvim/colors/markdown.css	/^.markdown-body ul ul {$/;"	s
+.markdown-body ul ul	nvim/colors/markdown.css	/^.markdown-body ul ul,$/;"	s
+.markdown-body ul ul ol	nvim/colors/markdown.css	/^.markdown-body ul ul ol,$/;"	s
+.markdown-body ul ul ul	nvim/colors/markdown.css	/^.markdown-body ul ul ul {$/;"	s
+.task-list-item	nvim/colors/markdown.css	/^.task-list-item {$/;"	c
+.task-list-item input	nvim/colors/markdown.css	/^.task-list-item input {$/;"	s
+.task-list-item input[disabled]	nvim/colors/markdown.css	/^.task-list-item input[disabled] {$/;"	s
+.task-list-item input[type="checkbox"]	nvim/colors/markdown.css	/^.task-list-item input[type="checkbox"] {$/;"	s
+.task-list-item input[type="radio"]	nvim/colors/markdown.css	/^.task-list-item input[type="radio"] {$/;"	s
+0	coc-settings.json	/^      "filetypes": ["cmake"],$/;"	s	array:languageserver.cmake.filetypes
+0	coc-settings.json	/^      "rootPatterns": ["build\/"],$/;"	s	array:languageserver.cmake.rootPatterns
+0	coc-settings.json	/^    "cpp": ["c"],$/;"	s	array:snippets.extends.cpp
+0	coc-settings.json	/^    "javascript": ["javascript"],$/;"	s	array:snippets.extends.javascript
+0	coc-settings.json	/^    "typescript": ["javascript"]$/;"	s	array:snippets.extends.typescript
+0	coc-settings.json	/^  "clangd.fallbackFlags": ["-I${workspaceForlder}", "-rdynamic"],$/;"	s	array:clangd.fallbackFlags
+0	coc-settings.json	/^  "coc.preferences.formatOnSaveFiletypes": [".py", ".json", "markdown"],$/;"	s	array:coc.preferences.formatOnSaveFiletypes
+0	coc-settings.json	/^  "colors.filetypes": ["*"],$/;"	s	array:colors.filetypes
+0	coc-settings.json	/^  "list.source.files.args": ["--hidden", "--files"],$/;"	s	array:list.source.files.args
+0	coc-settings.json	/^  "list.source.files.defaultOptions": ["--number-select"],$/;"	s	array:list.source.files.defaultOptions
+0	coc-settings.json	/^  "suggest.formatItems": ["kind","abbr","menu"],\/\/["abbr", "menu", "kind", "shortcut"],$/;"	s	array:suggest.formatItems
+0	coc-settings.json	/^  "translator.engines": ["bing", "youdao"],$/;"	s	array:translator.engines
+0	nvim/coc-settings.json	/^        {$/;"	o	array:java.configuration.runtimes
+0	nvim/coc-settings.json	/^    "notification.disabledProgressSources": ["*"],$/;"	s	array:notification.disabledProgressSources
+0	nvim/coc-settings.json	/^    "pairs.enableCharacters": ["(", "[", "{", "'", "\\"", "`"],$/;"	s	array:pairs.enableCharacters
+0	nvim/coc-settings.json	/^    "snippets.extends.javascript": ["typescript"],$/;"	s	array:snippets.extends.javascript
+0	nvim/coc-settings.json	/^    "snippets.ultisnips.directories": ["~\/.config\/nvim\/snippets\/ultisnips"],$/;"	s	array:snippets.ultisnips.directories
+0	nvim/coc-settings.json	/^    "translator.engines": ["youdao"],$/;"	s	array:translator.engines
+1	coc-settings.json	/^  "clangd.fallbackFlags": ["-I${workspaceForlder}", "-rdynamic"],$/;"	s	array:clangd.fallbackFlags
+1	coc-settings.json	/^  "coc.preferences.formatOnSaveFiletypes": [".py", ".json", "markdown"],$/;"	s	array:coc.preferences.formatOnSaveFiletypes
+1	coc-settings.json	/^  "list.source.files.args": ["--hidden", "--files"],$/;"	s	array:list.source.files.args
+1	coc-settings.json	/^  "suggest.formatItems": ["kind","abbr","menu"],\/\/["abbr", "menu", "kind", "shortcut"],$/;"	s	array:suggest.formatItems
+1	coc-settings.json	/^  "translator.engines": ["bing", "youdao"],$/;"	s	array:translator.engines
+1	nvim/coc-settings.json	/^    "pairs.enableCharacters": ["(", "[", "{", "'", "\\"", "`"],$/;"	s	array:pairs.enableCharacters
+2	coc-settings.json	/^  "coc.preferences.formatOnSaveFiletypes": [".py", ".json", "markdown"],$/;"	s	array:coc.preferences.formatOnSaveFiletypes
+2	coc-settings.json	/^  "suggest.formatItems": ["kind","abbr","menu"],\/\/["abbr", "menu", "kind", "shortcut"],$/;"	s	array:suggest.formatItems
+2	nvim/coc-settings.json	/^    "pairs.enableCharacters": ["(", "[", "{", "'", "\\"", "`"],$/;"	s	array:pairs.enableCharacters
+3	nvim/coc-settings.json	/^    "pairs.enableCharacters": ["(", "[", "{", "'", "\\"", "`"],$/;"	s	array:pairs.enableCharacters
+4	nvim/coc-settings.json	/^    "pairs.enableCharacters": ["(", "[", "{", "'", "\\"", "`"],$/;"	s	array:pairs.enableCharacters
+5	nvim/coc-settings.json	/^    "pairs.enableCharacters": ["(", "[", "{", "'", "\\"", "`"],$/;"	s	array:pairs.enableCharacters
+:root	nvim/colors/markdown.css	/^:root {$/;"	s
+<2-LeftMouse>	nvim/ftplugin/markdown.vim	/^nnoremap <silent><buffer> <2-LeftMouse> :call <SID>toggleTodoStatus()<CR>:w<CR><2-LeftMouse>$/;"	m
+<C-->	init/init-neovide.vim	/^    nnoremap <expr><C--> ChangeScaleFactor(1\/1.25)$/;"	m
+<C-=>	init/init-neovide.vim	/^    nnoremap <expr><C-=> ChangeScaleFactor(1.25)$/;"	m
+<C-h>	init.vim	/^nnoremap <silent> <C-h> :History<CR><C-h>$/;"	m
+<C-h>	init/init_pConfig.vim	/^nnoremap <silent> <C-h> :History<CR><C-h>$/;"	m
+<C-l>	init.vim	/^nnoremap <silent> <C-l> :nohl<CR><C-l>$/;"	m
+<C-l>	init/init_pConfig.vim	/^nnoremap <silent> <C-l> :nohl<CR><C-l>$/;"	m
+<C-n>	init/init-coc.vim	/^inoremap <silent><expr> <C-n> coc#pum#visible() ? coc#pum#next(0) : "\\<C-n>"$/;"	m
+<C-p>	init/init-coc.vim	/^inoremap <silent><expr> <C-p> coc#pum#visible() ? coc#pum#prev(0) : "\\<C-p>"$/;"	m
+<C-s>	init/init-coc.vim	/^nmap <silent> <C-s> <Plug>(coc-range-select)$/;"	m
+<C-s>	init/init-coc.vim	/^xmap <silent> <C-s> <Plug>(coc-range-select)$/;"	m
+<CR>	init/init-coc.vim	/^inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()$/;"	m
+<CR>	nvim/ftplugin/markdown.vim	/^nnoremap <silent><buffer> <CR>   :call <SID>toggleTodoStatus()<CR><CR>$/;"	m
+<F10>	init.vim	/^nnoremap <F10> :call asyncrun#quickfix_toggle(10)<cr>$/;"	m
+<F10>	init/init_pConfig.vim	/^nnoremap <F10> :call asyncrun#quickfix_toggle(10)<cr>$/;"	m
+<F2>	init/init-coc.vim	/^nmap <F2> <Cmd>CocCommand explorer --position  left --width 20<CR>$/;"	m
+<F5>	init.vim	/^nnoremap <silent> <F5> :AsyncRun -cwd=$(VIM_FILEDIR) -mode=4 "$(VIM_FILEDIR)\/$(VIM_FILENOEXT)" /;"	m
+<F5>	init/init_pConfig.vim	/^nnoremap <silent> <F5> :AsyncRun -cwd=$(VIM_FILEDIR) -mode=4 "$(VIM_FILEDIR)\/$(VIM_FILENOEXT)" /;"	m
+<F6>	nvim/ftplugin/markdown.vim	/^inoremap <silent><buffer> <F6> <ESC>:call <SID>toggleMPTheme()<CR>$/;"	m
+<F6>	nvim/ftplugin/markdown.vim	/^nnoremap <silent><buffer> <F6> :call <SID>toggleMPTheme()<CR>$/;"	m
+<F9>	init.vim	/^nnoremap <silent> <F9> :AsyncRun g++ -Wall -std=c++14  "$(VIM_FILEPATH)" -o "$(VIM_FILEDIR)\/$(V/;"	m
+<F9>	init/init_pConfig.vim	/^nnoremap <silent> <F9> :AsyncRun g++ -Wall -std=c++14  "$(VIM_FILEPATH)" -o "$(VIM_FILEDIR)\/$(V/;"	m
+<Leader>e	init/init-coc.vim	/^nmap <Leader>e <Plug>(coc-translator-e)$/;"	m
+<Leader>e	init/init-coc.vim	/^vmap <Leader>e <Plug>(coc-translator-ev)$/;"	m
+<Leader>r	init/init-coc.vim	/^nmap <Leader>r <Plug>(coc-translator-r)$/;"	m
+<Leader>r	init/init-coc.vim	/^vmap <Leader>r <Plug>(coc-translator-rv)$/;"	m
+<Leader>t	init/init-coc.vim	/^nmap <Leader>t <Plug>(coc-translator-p)$/;"	m
+<Leader>t	init/init-coc.vim	/^vmap <Leader>t <Plug>(coc-translator-pv)$/;"	m
+<S-TAB>	init/init-coc.vim	/^inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\\<C-h>"$/;"	m
+<TAB>	init/init-coc.vim	/^inoremap <silent><expr> <TAB>$/;"	m
+<c-@>	init/init-coc.vim	/^  inoremap <silent><expr> <c-@> coc#refresh()$/;"	m
+<c-j>	init/init-coc.vim	/^inoremap <silent><expr> <c-j> coc#float#has_scroll() ? "\\<c-r>=coc#float#scroll(1, 1)\\<cr>" : /;"	m
+<c-j>	init/init-coc.vim	/^nnoremap <silent><expr> <c-j> coc#float#has_scroll() ? coc#float#scroll(1, 1) : "\\<c-j>"$/;"	m
+<c-j>	init/init-coc.vim	/^vnoremap <silent><expr> <c-j> coc#float#has_scroll() ? coc#util#float_scroll_i( 1) : "\\<c-j>"$/;"	m
+<c-k>	init/init-coc.vim	/^inoremap <silent><expr> <c-k> coc#float#has_scroll() ? "\\<c-r>=coc#float#scroll(0, 1)\\<cr>" : /;"	m
+<c-k>	init/init-coc.vim	/^nnoremap <silent><expr> <c-k> coc#float#has_scroll() ? coc#float#scroll(0, 1) : "\\<c-k>"$/;"	m
+<c-k>	init/init-coc.vim	/^vnoremap <silent><expr> <c-k> coc#float#has_scroll() ? coc#util#float_scroll_i(-1) : "\\<c-k>"$/;"	m
+<c-space>	init/init-coc.vim	/^  inoremap <silent><expr> <c-space> coc#refresh()$/;"	m
+<c-space>	init/init-coc.vim	/^inoremap <silent><expr> <c-space> coc#refresh()$/;"	m
+<f8>	init/init-coc.vim	/^nnoremap <silent><nowait> <f8>  :call ToggleOutline()<CR>$/;"	m
+<leader>a	init/init-coc.vim	/^nmap <leader>a  <Plug>(coc-codeaction-selected)$/;"	m
+<leader>a	init/init-coc.vim	/^xmap <leader>a  <Plug>(coc-codeaction-selected)$/;"	m
+<leader>ac	init/init-coc.vim	/^nmap <leader>ac  <Plug>(coc-codeaction)$/;"	m
+<leader>cl	init/init-coc.vim	/^nmap <leader>cl  <Plug>(coc-codelens-action)$/;"	m
+<leader>f	init/init-coc.vim	/^nmap <leader>f  <Plug>(coc-format-selected)$/;"	m
+<leader>f	init/init-coc.vim	/^xmap <leader>f  <Plug>(coc-format-selected)$/;"	m
+<leader>qf	init/init-coc.vim	/^nmap <leader>qf  <Plug>(coc-fix-current)$/;"	m
+<leader>rf	init/init-coc.vim	/^nmap <leader>rf <Plug>(coc-refactor)$/;"	m
+<leader>rn	init/init-coc.vim	/^nmap <leader>rn <Plug>(coc-rename)$/;"	m
+<space><space>	init/init-coc.vim	/^nnoremap <silent> <space><space> :<C-u>CocFzfList<CR>$/;"	m
+<space>a	init/init-coc.vim	/^nnoremap <silent> <space>a       :<C-u>CocFzfList diagnostics<CR>$/;"	m
+<space>b	init/init-coc.vim	/^nnoremap <silent> <space>b       :<C-u>CocFzfList diagnostics --current-buf<CR>$/;"	m
+<space>c	init/init-coc.vim	/^nnoremap <silent> <space>c       :<C-u>CocFzfList commands<CR>$/;"	m
+<space>e	init/init-coc.vim	/^nnoremap <silent> <space>e       :<C-u>CocFzfList extensions <CR>$/;"	m
+<space>ec	init/init-coc.vim	/^nmap <space>ec <Cmd>CocCommand explorer --preset cocConfig<CR>$/;"	m
+<space>ef	init/init-coc.vim	/^nnoremap <space>ef <Cmd>CocCommand explorer --preset simplify<CR>$/;"	m
+<space>el	init/init-coc.vim	/^nmap <space>el <Cmd>CocList explPresets<CR>$/;"	m
+<space>ev	init/init-coc.vim	/^nmap <space>ev <Cmd>CocCommand explorer --preset .vim<CR>$/;"	m
+<space>fb	init.vim	/^nnoremap <silent> <space>fb :Leaderf buffer<CR>$/;"	m
+<space>fb	init/init_pConfig.vim	/^nnoremap <silent> <space>fb :Leaderf buffer<CR>$/;"	m
+<space>ff	init.vim	/^nnoremap <silent> <space>ff :Leaderf file<CR>$/;"	m
+<space>ff	init/init_pConfig.vim	/^nnoremap <silent> <space>ff :Leaderf file<CR>$/;"	m
+<space>fh	init.vim	/^nnoremap <silent> <space>fh :LeaderfHelp<CR>$/;"	m
+<space>fh	init/init_pConfig.vim	/^nnoremap <silent> <space>fh :LeaderfHelp<CR>$/;"	m
+<space>fl	init.vim	/^noremap <space>fl :<C-U><C-R>=printf("Leaderf line %s", "")<CR><CR>$/;"	m
+<space>fl	init/init_pConfig.vim	/^noremap <space>fl :<C-U><C-R>=printf("Leaderf line %s", "")<CR><CR>$/;"	m
+<space>fm	init.vim	/^nnoremap <silent> <space>fm :Leaderf mru<CR>$/;"	m
+<space>fm	init/init_pConfig.vim	/^nnoremap <silent> <space>fm :Leaderf mru<CR>$/;"	m
+<space>ft	init.vim	/^noremap <space>ft :<C-U><C-R>=printf("Leaderf bufTag %s", "")<CR><CR>$/;"	m
+<space>ft	init/init_pConfig.vim	/^noremap <space>ft :<C-U><C-R>=printf("Leaderf bufTag %s", "")<CR><CR>$/;"	m
+<space>fu	init.vim	/^nnoremap <silent> <space>fu :Leaderf function<CR>$/;"	m
+<space>fu	init/init_pConfig.vim	/^nnoremap <silent> <space>fu :Leaderf function<CR>$/;"	m
+<space>g	init/init-coc.vim	/^nnoremap <silent> <space>g :<C-u>CocList <CR>$/;"	m
+<space>l	init/init-coc.vim	/^nnoremap <silent> <space>l       :<C-u>CocFzfList location<CR>$/;"	m
+<space>o	init/init-coc.vim	/^nnoremap <silent> <space>o       :<C-u>CocFzfList outline<cr>$/;"	m
+<space>p	init/init-coc.vim	/^nnoremap <silent> <space>p       :<C-u>CocFzfListResume<CR>$/;"	m
+<space>rg	init.vim	/^nnoremap <silent> <space>rg :Leaderf rg<CR>$/;"	m
+<space>rg	init/init_pConfig.vim	/^nnoremap <silent> <space>rg :Leaderf rg<CR>$/;"	m
+<space>s	init/init-coc.vim	/^nnoremap <silent> <space>s       :<C-u>CocFzfList symbols<CR>$/;"	m
+AutoHighlightToggle	init.vim	/^function! AutoHighlightToggle()$/;"	f
+AutoHighlightToggle	init/init_pConfig.vim	/^function! AutoHighlightToggle()$/;"	f
+B	nvim/ftplugin/markdown.vim	/^vnoremap <silent><buffer> B      :<c-u>call SurroundVaddPairs("**", "**")<cr>$/;"	m
+C	nvim/ftplugin/markdown.vim	/^vnoremap <silent><buffer> C      :<c-u>call SurroundVaddPairs("```plaintext", "```")<cr>$/;"	m
+ChangeScaleFactor	init/init-neovide.vim	/^    function! ChangeScaleFactor(delta)$/;"	f
+CheckBackspace	init/init-coc.vim	/^function! CheckBackspace() abort$/;"	f
+CocErrCount	nvim/lua/pack/nvim-lines.lua	/^function CocErrCount()$/;"	f
+D	nvim/ftplugin/go.vim	/^vnoremap <silent><buffer> D :<c-u>call SurroundVaddPairs("\/** ", " *\/")<cr>$/;"	m
+D	nvim/ftplugin/javascript.vim	/^vnoremap <silent><buffer> D :<c-u>call SurroundVaddPairs("\/** ", " *\/")<cr>$/;"	m
+D	nvim/ftplugin/python.vim	/^vnoremap <silent><buffer> D :<c-u>call SurroundVaddPairs("\/** ", " *\/")<cr>$/;"	m
+D	nvim/ftplugin/typescript.vim	/^vnoremap <silent><buffer> D :<c-u>call SurroundVaddPairs("\/** ", " *\/")<cr>$/;"	m
+DBUI	nvim/lua/pack/vim-dadbod.lua	/^function DBUI()$/;"	f
+F	nvim/ftplugin/go.vim	/^vnoremap <silent><buffer> F :<c-u>call <SID>gfor()<cr>jo$/;"	m
+Fold	init/init-coc.vim	/^command! -nargs=? Fold :call     CocAction('fold', <f-args>)$/;"	c
+Format	init/init-coc.vim	/^command! -nargs=0 Format :call CocActionAsync('format')$/;"	c
+G.cmd	nvim/lua/G.lua	/^function G.cmd(cmd)$/;"	f
+G.eval	nvim/lua/G.lua	/^function G.eval(c)$/;"	f
+G.exec	nvim/lua/G.lua	/^function G.exec(c)$/;"	f
+G.hi	nvim/lua/G.lua	/^function G.hi(hls)$/;"	f
+G.map	nvim/lua/G.lua	/^function G.map(maps)$/;"	f
+GetFt	nvim/lua/pack/nvim-lines.lua	/^function GetFt()$/;"	f
+GitInfo	nvim/lua/pack/nvim-lines.lua	/^function GitInfo()$/;"	f
+I	nvim/ftplugin/markdown.vim	/^vnoremap <silent><buffer> I      :<c-u>call SurroundVaddPairs("*", "*")<cr>$/;"	m
+K	init/init-coc.vim	/^nnoremap <silent> K :call ShowDocumentation()<CR>$/;"	m
+LoadScript	init.vim	/^command! -nargs=1 LoadScript exec 'so '.s:home.'\/'.'<args>'$/;"	c
+Lua.telemetry.enable	nvim/coc-settings.json	/^    "Lua.telemetry.enable": true$/;"	b
+M.config	nvim/lua/pack/coc.lua	/^function M.config()$/;"	f
+M.config	nvim/lua/pack/copilot.lua	/^function M.config()$/;"	f
+M.config	nvim/lua/pack/fzf.lua	/^function M.config()$/;"	f
+M.config	nvim/lua/pack/markdown.lua	/^function M.config()$/;"	f
+M.config	nvim/lua/pack/nvim-lines.lua	/^function M.config()$/;"	f
+M.config	nvim/lua/pack/nvim-tree.lua	/^function M.config()$/;"	f
+M.config	nvim/lua/pack/tree-sitter.lua	/^function M.config()$/;"	f
+M.config	nvim/lua/pack/vim-dadbod.lua	/^function M.config()$/;"	f
+M.config	nvim/lua/pack/vim-expand-region.lua	/^function M.config()$/;"	f
+M.config	nvim/lua/pack/vim-floaterm.lua	/^function M.config()$/;"	f
+M.config	nvim/lua/pack/vim-interestingwords.lua	/^function M.config()$/;"	f
+M.config	nvim/lua/pack/vim-visual-multi.lua	/^function M.config()$/;"	f
+M.config	nvim/lua/pack/yaocccc.lua	/^function M.config()$/;"	f
+M.magicCd	nvim/lua/pack/nvim-tree.lua	/^function M.magicCd()$/;"	f
+M.runFile	nvim/lua/pack/vim-floaterm.lua	/^function M.runFile()$/;"	f
+M.setFTToggleMap	nvim/lua/pack/vim-floaterm.lua	/^function M.setFTToggleMap(key, name, cmd)$/;"	f
+M.setup	nvim/lua/pack/coc.lua	/^function M.setup()$/;"	f
+M.setup	nvim/lua/pack/copilot.lua	/^function M.setup()$/;"	f
+M.setup	nvim/lua/pack/fzf.lua	/^function M.setup()$/;"	f
+M.setup	nvim/lua/pack/markdown.lua	/^function M.setup()$/;"	f
+M.setup	nvim/lua/pack/nvim-lines.lua	/^function M.setup()$/;"	f
+M.setup	nvim/lua/pack/nvim-tree.lua	/^function M.setup()$/;"	f
+M.setup	nvim/lua/pack/tree-sitter.lua	/^function M.setup()$/;"	f
+M.setup	nvim/lua/pack/vim-dadbod.lua	/^function M.setup()$/;"	f
+M.setup	nvim/lua/pack/vim-expand-region.lua	/^function M.setup()$/;"	f
+M.setup	nvim/lua/pack/vim-floaterm.lua	/^function M.setup()$/;"	f
+M.setup	nvim/lua/pack/vim-interestingwords.lua	/^function M.setup()$/;"	f
+M.setup	nvim/lua/pack/vim-visual-multi.lua	/^function M.setup()$/;"	f
+M.setup	nvim/lua/pack/yaocccc.lua	/^function M.setup()$/;"	f
+M.toggleFT	nvim/lua/pack/vim-floaterm.lua	/^function M.toggleFT(name, cmd)$/;"	f
+NERDTreeDirArrows	init.vim	/^let NERDTreeDirArrows = 1$/;"	v
+NERDTreeDirArrows	init/init_pConfig.vim	/^let NERDTreeDirArrows = 1$/;"	v
+NERDTreeIgnore	init.vim	/^let NERDTreeIgnore = ['\\.pyc$']  " 过滤所有.pyc文件不显示$/;"	v
+NERDTreeIgnore	init/init_pConfig.vim	/^let NERDTreeIgnore = ['\\.pyc$']  " 过滤所有.pyc文件不显示$/;"	v
+NERDTreeMinimalUI	init.vim	/^let NERDTreeMinimalUI = 1$/;"	v
+NERDTreeMinimalUI	init/init_pConfig.vim	/^let NERDTreeMinimalUI = 1$/;"	v
+OR	init/init-coc.vim	/^command! -nargs=0 OR   :call     CocActionAsync('runCommand', 'editor.action.organizeImport')$/;"	c
+PythonTab	init/init-tabsize.vim	/^augroup PythonTab$/;"	a
+ShowDocumentation	init/init-coc.vim	/^function! ShowDocumentation()$/;"	f
+T	nvim/ftplugin/markdown.vim	/^vnoremap <silent><buffer> T      :<c-u>call SurroundVaddPairs("- [ ] ", "")<cr>$/;"	m
+ToggleOutline	init/init-coc.vim	/^function! ToggleOutline() abort$/;"	f
+[b	init/init-coc.vim	/^nnoremap [b :bp<CR>$/;"	m
+[g	init/init-coc.vim	/^nmap <silent> [g <Plug>(coc-diagnostic-prev)$/;"	m
+[s	init/init-coc.vim	/^nmap [s <Cmd>CocCommand document.jumpToPrevSymbol<CR>$/;"	m
+]b	init/init-coc.vim	/^nnoremap ]b :bn<CR>$/;"	m
+]g	init/init-coc.vim	/^nmap <silent> ]g <Plug>(coc-diagnostic-next)$/;"	m
+]s	init/init-coc.vim	/^nmap ]s <Cmd>CocCommand document.jumpToNextSymbol<CR>$/;"	m
+`	nvim/ftplugin/markdown.vim	/^vnoremap <silent><buffer> `      :<c-u>call SurroundVaddPairs("`", "`")<cr>$/;"	m
+ac	init/init-coc.vim	/^omap ac <Plug>(coc-classobj-a)$/;"	m
+ac	init/init-coc.vim	/^xmap ac <Plug>(coc-classobj-a)$/;"	m
+af	init/init-coc.vim	/^omap af <Plug>(coc-funcobj-a)$/;"	m
+af	init/init-coc.vim	/^xmap af <Plug>(coc-funcobj-a)$/;"	m
+asm-build	task_template.ini	/^[asm-build]$/;"	s
+asm-build:x32	task_template.ini	/^[asm-build:x32]$/;"	s
+auto_highlight	init.vim	/^        augroup auto_highlight$/;"	a
+auto_highlight	init/init_pConfig.vim	/^        augroup auto_highlight$/;"	a
+b:md_block	nvim/ftplugin/markdown.vim	/^let b:md_block = '```'$/;"	v
+border	nvim/coc-settings.json	/^    "diagnostic.floatConfig": { "border": true, "rounded": true },$/;"	b	object:diagnostic.floatConfig
+border	nvim/coc-settings.json	/^    "git.floatConfig": { "border": true, "rounded": true },$/;"	b	object:git.floatConfig
+border	nvim/coc-settings.json	/^    "hover.floatConfig": { "border": true, "rounded": true, "focusable": true },$/;"	b	object:hover.floatConfig
+border	nvim/coc-settings.json	/^    "signature.floatConfig": { "border": true, "rounded": true },$/;"	b	object:signature.floatConfig
+border	nvim/coc-settings.json	/^    "suggest.floatConfig": { "border": true, "rounded": true },$/;"	b	object:suggest.floatConfig
+buildDirectory	coc-settings.json	/^        "buildDirectory": "build"$/;"	s	object:languageserver.cmake.initializationOptions
+c_no_curly_error	init.vim	/^let c_no_curly_error=1$/;"	v
+c_no_curly_error	init/init_pConfig.vim	/^let c_no_curly_error=1$/;"	v
+clang-tidy	task_template.ini	/^[clang-tidy]$/;"	s
+clangd.arguments	coc-settings.json	/^  "clangd.arguments": [],$/;"	a
+clangd.fallbackFlags	coc-settings.json	/^  "clangd.fallbackFlags": ["-I${workspaceForlder}", "-rdynamic"],$/;"	a
+clangd.path	nvim/coc-settings.json	/^    "clangd.path": "\/usr\/bin\/clangd",$/;"	s
+class	coc-settings.json	/^    "class": "",$/;"	s	object:suggest.completionItemKindLabels
+clazy	task_template.ini	/^[clazy]$/;"	s
+cloc	task_template.ini	/^[cloc]$/;"	s
+cmake	coc-settings.json	/^    "cmake": {$/;"	o	object:languageserver
+cmake.lsp.enable	coc-settings.json	/^  "cmake.lsp.enable": true,$/;"	b
+coc.preferences.extensionUpdateCheck	coc-settings.json	/^  "coc.preferences.extensionUpdateCheck": "daily"$/;"	s
+coc.preferences.formatOnSaveFiletypes	coc-settings.json	/^  "coc.preferences.formatOnSaveFiletypes": [".py", ".json", "markdown"],$/;"	a
+color	coc-settings.json	/^    "color": "",$/;"	s	object:suggest.completionItemKindLabels
+colors.filetypes	coc-settings.json	/^  "colors.filetypes": ["*"],$/;"	a
+colorscheme_coc_setup	init/init-highlight.vim	/^augroup colorscheme_coc_setup | au!$/;"	a
+command	coc-settings.json	/^      "command": "cmake-language-server",$/;"	s	object:languageserver.cmake
+command	task_template.ini	/^command = cmake --build _builds -- VERBOSE=1$/;"	k	section:project-build
+command	task_template.ini	/^command = cmake --build _builds\/$/;"	k	section:project-build:cmake
+command	task_template.ini	/^command:asm=as --64 -gdwarf-4 -o "$(VIM_PATHNOEXT).o" "$(VIM_FILEPATH)" && ld -dynamic-linker \//;"	k	section:asm-build
+command	task_template.ini	/^command:asm=as --64 -gdwarf-4 -o "$(VIM_PATHNOEXT).o" "$(VIM_FILEPATH)" && ld -m elf_i386 -dynam/;"	k	section:file-build
+command	task_template.ini	/^command:c,cpp,asm="$(VIM_PATHNOEXT).out"$/;"	k	section:file-run
+command	task_template.ini	/^command:c=clang -std=gnu11 -Wall -gdwarf-4 -pthread -lm "$(VIM_FILEPATH)" -o "$(VIM_PATHNOEXT)"$/;"	k	section:file-build:clang
+command	task_template.ini	/^command:c=gcc -fmax-errors=20 -std=gnu11 -Wall -Wstrict-aliasing=1 -gdwarf-4 -pthread -lm "$(VIM/;"	k	section:file-build
+command	task_template.ini	/^command:c=gcc -fmax-errors=20 -std=gnu11 -Wall -Wstrict-aliasing=1 -gdwarf-4 -pthread -lm "$(VIM/;"	k	section:file-build:gcc
+command	task_template.ini	/^command:cpp=clang++  -D_GLIBCXX_DEBUG -std=c++20 -Wall -gdwarf-4 "$(VIM_FILEPATH)" -o "$(VIM_PAT/;"	k	section:file-build:clang
+command	task_template.ini	/^command:cpp=clang++ -fmax-errors=20 -std=c++20 -Wall -Wstrict-aliasing=1 -gdwarf-4  "$(VIM_FILEP/;"	k	section:file-test:clang
+command	task_template.ini	/^command:cpp=g++ -fmax-errors=20 -D_GLIBCXX_DEBUG -std=c++20 -Wall -gdwarf-4 "$(VIM_FILEPATH)" -o/;"	k	section:file-build:gcc
+command	task_template.ini	/^command:cpp=g++ -fmax-errors=20 -D_GLIBCXX_DEBUG -std=c++20 -Wall -gdwarf-4 -pthread "$(VIM_FILE/;"	k	section:file-build
+command	task_template.ini	/^command:cpp=g++ -fmax-errors=20 -std=c++20 -Wall -gdwarf-4  "$(VIM_FILEPATH)" -o "$(VIM_PATHNOEX/;"	k	section:file-test:gcc
+command	task_template.ini	/^command:dot=dot -Tpng -o $(VIM_PATHNOEXT).png $(VIM_FILENAME)$/;"	k	section:file-build
+command	task_template.ini	/^command:dot=eog $(VIM_PATHNOEXT).png$/;"	k	section:file-run
+command	task_template.ini	/^command:fish=fish "$(VIM_FILENAME)"$/;"	k	section:file-run
+command	task_template.ini	/^command:html=xdg-open $(VIM_FILENAME)$/;"	k	section:file-build
+command	task_template.ini	/^command:javascript=node "$(VIM_FILENAME)"$/;"	k	section:file-run
+command	task_template.ini	/^command:lua=lua "$(VIM_FILENAME)"$/;"	k	section:file-run
+command	task_template.ini	/^command:lua=luac -p "$(VIM_FILENAME)"$/;"	k	section:file-build
+command	task_template.ini	/^command:make=make -f "$(VIM_FILEPATH)"$/;"	k	section:file-build
+command	task_template.ini	/^command:ruby=ruby "$(VIM_FILENAME)"$/;"	k	section:file-run
+command	task_template.ini	/^command:rust=cargo build$/;"	k	section:file-build
+command	task_template.ini	/^command:rust=cargo run$/;"	k	section:file-run
+command	task_template.ini	/^command:sh=sh "$(VIM_FILENAME)"$/;"	k	section:file-run
+command	task_template.ini	/^command=cargo build$/;"	k	section:project-build:cargo
+command	task_template.ini	/^command=cargo run$/;"	k	section:project-run:cargo
+command	task_template.ini	/^command=cargo test$/;"	k	section:project-test:cargo
+command	task_template.ini	/^command=cloc --exclude-dir=_builds,.cache .$/;"	k	section:cloc
+command	task_template.ini	/^command=cmake --build _builds --target open-doc$/;"	k	section:open-doc
+command	task_template.ini	/^command=cmake --build _builds --target open-doc$/;"	k	section:open-doc:cmake
+command	task_template.ini	/^command=find . -type d -name '.cache' -prune -o -type d -name '_builds' -prune -o -name '*.cpp' /;"	k	section:clang-tidy
+command	task_template.ini	/^command=find . -type d -name '.cache' -prune -o -type d -name '_builds' -prune -o -name '*.cpp' /;"	k	section:clazy
+completeUnimported	nvim/coc-settings.json	/^        "completeUnimported": true,$/;"	b	object:go.goplsOptions
+constant	coc-settings.json	/^    "constant": "",$/;"	s	object:suggest.completionItemKindLabels
+cpp	coc-settings.json	/^    "cpp": ["c"],$/;"	a	object:snippets.extends
+cwd	task_template.ini	/^cwd=$(VIM_FILEDIR)$/;"	k	section:asm-build
+cwd	task_template.ini	/^cwd=$(VIM_FILEDIR)$/;"	k	section:asm-build:x32
+cwd	task_template.ini	/^cwd=$(VIM_FILEDIR)$/;"	k	section:file-build
+cwd	task_template.ini	/^cwd=$(VIM_FILEDIR)$/;"	k	section:file-run
+cwd	task_template.ini	/^cwd=$(VIM_FILEDIR)$/;"	k	section:project-build:cargo
+cwd	task_template.ini	/^cwd=$(VIM_ROOT)$/;"	k	section:generate-compile-database-from-makefile
+cwd	task_template.ini	/^cwd=$(VIM_ROOT)$/;"	k	section:open-doc
+cwd	task_template.ini	/^cwd=$(VIM_ROOT)$/;"	k	section:open-doc:cmake
+cwd	task_template.ini	/^cwd=$(VIM_ROOT)$/;"	k	section:project-build
+cwd	task_template.ini	/^cwd=$(VIM_ROOT)$/;"	k	section:project-build:cmake
+cwd	task_template.ini	/^cwd=$(VIM_ROOT)$/;"	k	section:project-build:make
+cwd	task_template.ini	/^cwd=$(VIM_ROOT)$/;"	k	section:project-clean
+cwd	task_template.ini	/^cwd=$(VIM_ROOT)$/;"	k	section:project-clean:cmake
+cwd	task_template.ini	/^cwd=$(VIM_ROOT)$/;"	k	section:project-clean:make
+cwd	task_template.ini	/^cwd=$(VIM_ROOT)$/;"	k	section:project-configure
+cwd	task_template.ini	/^cwd=$(VIM_ROOT)$/;"	k	section:project-configure:debug
+cwd	task_template.ini	/^cwd=$(VIM_ROOT)$/;"	k	section:project-configure:release
+cwd	task_template.ini	/^cwd=$(VIM_ROOT)$/;"	k	section:project-run
+cwd	task_template.ini	/^cwd=$(VIM_ROOT)$/;"	k	section:project-run:cargo
+cwd	task_template.ini	/^cwd=$(VIM_ROOT)$/;"	k	section:project-run:cmake
+cwd	task_template.ini	/^cwd=$(VIM_ROOT)$/;"	k	section:project-run:make
+cwd	task_template.ini	/^cwd=(VIM_ROOT)$/;"	k	section:clang-tidy
+cwd	task_template.ini	/^cwd=(VIM_ROOT)$/;"	k	section:clazy
+cwd	task_template.ini	/^cwd=(VIM_ROOT)$/;"	k	section:cloc
+cwd	task_template.ini	/^cwd=(VIM_ROOT)$/;"	k	section:project-test:cargo
+data-theme	nvim/colors/markdown.css	/^[data-theme="dark"] {$/;"	s
+default	coc-settings.json	/^    "default": ""$/;"	s	object:suggest.completionItemKindLabels
+default	nvim/coc-settings.json	/^            "default": true$/;"	b	object:java.configuration.runtimes.0
+diagnostic.checkCurrentLine	coc-settings.json	/^  "diagnostic.checkCurrentLine": true,$/;"	b
+diagnostic.errorSign	coc-settings.json	/^  "diagnostic.errorSign": "",$/;"	s
+diagnostic.errorSign	nvim/coc-settings.json	/^    "diagnostic.errorSign": "┃",$/;"	s
+diagnostic.floatConfig	nvim/coc-settings.json	/^    "diagnostic.floatConfig": { "border": true, "rounded": true },$/;"	o
+diagnostic.hintSign	nvim/coc-settings.json	/^    "diagnostic.hintSign": "┃",$/;"	s
+diagnostic.infoSign	nvim/coc-settings.json	/^    "diagnostic.infoSign": "┃",$/;"	s
+diagnostic.refreshOnInsertMode	coc-settings.json	/^  "diagnostic.refreshOnInsertMode": true,$/;"	b
+diagnostic.signOffset	nvim/coc-settings.json	/^    "diagnostic.signOffset": 1,$/;"	n
+diagnostic.virtualText	coc-settings.json	/^  "diagnostic.virtualText": false,$/;"	b
+diagnostic.warningSign	coc-settings.json	/^  "diagnostic.warningSign": "󰔶",$/;"	s
+diagnostic.warningSign	nvim/coc-settings.json	/^    "diagnostic.warningSign": "┃",$/;"	s
+disableSuccessMessage	nvim/coc-settings.json	/^        "disableSuccessMessage": true,$/;"	b	object:prettier
+enum	coc-settings.json	/^    "enum": "",$/;"	s	object:suggest.completionItemKindLabels
+enumMember	coc-settings.json	/^    "enumMember": "",$/;"	s	object:suggest.completionItemKindLabels
+error_msg	nvim/plugin/packer_compiled.lua	/^local no_errors, error_msg = pcall(function()$/;"	f
+event	coc-settings.json	/^    "event": "鬒",$/;"	s	object:suggest.completionItemKindLabels
+explorer.file.child.template	coc-settings.json	/^  "explorer.file.child.template": "[selection | clip | 1] [indent][icon | 1] [diagnosticError & /;"	s
+explorer.icon.enableNerdfont	coc-settings.json	/^  "explorer.icon.enableNerdfont": true,$/;"	b
+explorer.icon.source	coc-settings.json	/^  "explorer.icon.source": "vim-devicons",$/;"	s
+explorer.width	coc-settings.json	/^  "explorer.width": 20,$/;"	n
+field	coc-settings.json	/^    "field": "󰐾",$/;"	s	object:suggest.completionItemKindLabels
+file	coc-settings.json	/^    "file": "",$/;"	s	object:suggest.completionItemKindLabels
+file-build	task_template.ini	/^[file-build]$/;"	s
+file-build:clang	task_template.ini	/^[file-build:clang]$/;"	s
+file-build:gcc	task_template.ini	/^[file-build:gcc]$/;"	s
+file-run	task_template.ini	/^[file-run]$/;"	s
+file-test:clang	task_template.ini	/^[file-test:clang]$/;"	s
+file-test:gcc	task_template.ini	/^[file-test:gcc]$/;"	s
+filetypes	coc-settings.json	/^      "filetypes": ["cmake"],$/;"	a	object:languageserver.cmake
+focusable	nvim/coc-settings.json	/^    "hover.floatConfig": { "border": true, "rounded": true, "focusable": true },$/;"	b	object:hover.floatConfig
+folder	coc-settings.json	/^    "folder": "",$/;"	s	object:suggest.completionItemKindLabels
+formatterPriority	nvim/coc-settings.json	/^        "formatterPriority": 999$/;"	n	object:prettier
+function	coc-settings.json	/^    "function": "󰊕",$/;"	s	object:suggest.completionItemKindLabels
+g:Lf_CacheDirectory	init.vim	/^let g:Lf_CacheDirectory = expand('~\/.vim\/cache')$/;"	v
+g:Lf_CacheDirectory	init/init_pConfig.vim	/^let g:Lf_CacheDirectory = expand('~\/.vim\/cache')$/;"	v
+g:Lf_HideHelp	init.vim	/^let g:Lf_HideHelp = 1$/;"	v
+g:Lf_HideHelp	init/init_pConfig.vim	/^let g:Lf_HideHelp = 1$/;"	v
+g:Lf_PopupScheme	init.vim	/^let g:Lf_PopupScheme = 'gruvbox-material'$/;"	v
+g:Lf_PopupScheme	init/init_pConfig.vim	/^let g:Lf_PopupScheme = 'gruvbox-material'$/;"	v
+g:Lf_PreviewResult	init.vim	/^let g:Lf_PreviewResult = {'Function': 0, 'BufTag': 0 }$/;"	v
+g:Lf_PreviewResult	init.vim	/^let g:Lf_PreviewResult = {'Function':0, 'BufTag':0}$/;"	v
+g:Lf_PreviewResult	init.vim	/^let g:Lf_PreviewResult = {'Function':0, 'Colorscheme':1}$/;"	v
+g:Lf_PreviewResult	init/init_pConfig.vim	/^let g:Lf_PreviewResult = {'Function': 0, 'BufTag': 0 }$/;"	v
+g:Lf_PreviewResult	init/init_pConfig.vim	/^let g:Lf_PreviewResult = {'Function':0, 'BufTag':0}$/;"	v
+g:Lf_PreviewResult	init/init_pConfig.vim	/^let g:Lf_PreviewResult = {'Function':0, 'Colorscheme':1}$/;"	v
+g:Lf_RootMarkers	init.vim	/^let g:Lf_RootMarkers = ['.project', '.root', '.svn', '.git']$/;"	v
+g:Lf_RootMarkers	init/init_pConfig.vim	/^let g:Lf_RootMarkers = ['.project', '.root', '.svn', '.git']$/;"	v
+g:Lf_ShowDevIcons	init.vim	/^let g:Lf_ShowDevIcons = 1$/;"	v
+g:Lf_ShowDevIcons	init/init_pConfig.vim	/^let g:Lf_ShowDevIcons = 1$/;"	v
+g:Lf_ShowRelativePath	init.vim	/^let g:Lf_ShowRelativePath = 0$/;"	v
+g:Lf_ShowRelativePath	init/init_pConfig.vim	/^let g:Lf_ShowRelativePath = 0$/;"	v
+g:Lf_StlColorscheme	init.vim	/^let g:Lf_StlColorscheme = 'default'$/;"	v
+g:Lf_StlColorscheme	init/init_pConfig.vim	/^let g:Lf_StlColorscheme = 'default'$/;"	v
+g:Lf_StlSeparator	init.vim	/^let g:Lf_StlSeparator = { 'left': "\\ue0b0", 'right': "\\ue0b2", 'font': "DejaVu Sans Mono for P/;"	v
+g:Lf_StlSeparator	init.vim	/^let g:Lf_StlSeparator = { 'left': '', 'right': '', 'font': '' }$/;"	v
+g:Lf_StlSeparator	init/init_pConfig.vim	/^let g:Lf_StlSeparator = { 'left': "\\ue0b0", 'right': "\\ue0b2", 'font': "DejaVu Sans Mono for P/;"	v
+g:Lf_StlSeparator	init/init_pConfig.vim	/^let g:Lf_StlSeparator = { 'left': '', 'right': '', 'font': '' }$/;"	v
+g:Lf_WindowHeight	init.vim	/^let g:Lf_WindowHeight = 0.30$/;"	v
+g:Lf_WindowHeight	init/init_pConfig.vim	/^let g:Lf_WindowHeight = 0.30$/;"	v
+g:Lf_WorkingDirectoryMode	init.vim	/^let g:Lf_WorkingDirectoryMode = 'Ac'$/;"	v
+g:Lf_WorkingDirectoryMode	init/init_pConfig.vim	/^let g:Lf_WorkingDirectoryMode = 'Ac'$/;"	v
+g:NERDAltDelims_java	init.vim	/^let g:NERDAltDelims_java = 1$/;"	v
+g:NERDAltDelims_java	init/init_pConfig.vim	/^let g:NERDAltDelims_java = 1$/;"	v
+g:NERDCommentEmptyLines	init.vim	/^let g:NERDCommentEmptyLines = 1$/;"	v
+g:NERDCommentEmptyLines	init/init_pConfig.vim	/^let g:NERDCommentEmptyLines = 1$/;"	v
+g:NERDCompactSexyComs	init.vim	/^let g:NERDCompactSexyComs = 1$/;"	v
+g:NERDCompactSexyComs	init/init_pConfig.vim	/^let g:NERDCompactSexyComs = 1$/;"	v
+g:NERDCustomDelimiters	init.vim	/^let g:NERDCustomDelimiters = { 'c': { 'left': '\/**','right': '*\/' } }$/;"	v
+g:NERDCustomDelimiters	init/init_pConfig.vim	/^let g:NERDCustomDelimiters = { 'c': { 'left': '\/**','right': '*\/' } }$/;"	v
+g:NERDDefaultAlign	init.vim	/^let g:NERDDefaultAlign = 'left'$/;"	v
+g:NERDDefaultAlign	init/init_pConfig.vim	/^let g:NERDDefaultAlign = 'left'$/;"	v
+g:NERDSpaceDelims	init.vim	/^let g:NERDSpaceDelims = 1$/;"	v
+g:NERDSpaceDelims	init/init_pConfig.vim	/^let g:NERDSpaceDelims = 1$/;"	v
+g:NERDToggleCheckAllLines	init.vim	/^let g:NERDToggleCheckAllLines = 1$/;"	v
+g:NERDToggleCheckAllLines	init/init_pConfig.vim	/^let g:NERDToggleCheckAllLines = 1$/;"	v
+g:NERDTreeHidden	init.vim	/^let g:NERDTreeHidden=0     "不显示隐藏文件$/;"	v
+g:NERDTreeHidden	init/init_pConfig.vim	/^let g:NERDTreeHidden=0     "不显示隐藏文件$/;"	v
+g:NERDTreeShowLineNumbers	init.vim	/^let g:NERDTreeShowLineNumbers=0 " 是否显示行号$/;"	v
+g:NERDTreeShowLineNumbers	init/init_pConfig.vim	/^let g:NERDTreeShowLineNumbers=0 " 是否显示行号$/;"	v
+g:NERDTreeWinSize	init.vim	/^let g:NERDTreeWinSize = 25 "设定 NERDTree 视窗大小$/;"	v
+g:NERDTreeWinSize	init/init_pConfig.vim	/^let g:NERDTreeWinSize = 25 "设定 NERDTree 视窗大小$/;"	v
+g:NERDTrimTrailingWhitespace	init.vim	/^let g:NERDTrimTrailingWhitespace = 1$/;"	v
+g:NERDTrimTrailingWhitespace	init/init_pConfig.vim	/^let g:NERDTrimTrailingWhitespace = 1$/;"	v
+g:Powerline_symbols	init.vim	/^let g:Powerline_symbols='fancy'$/;"	v
+g:Powerline_symbols	init/init_pConfig.vim	/^let g:Powerline_symbols='fancy'$/;"	v
+g:airline#extensions#tabline#buffer_nr_show	init.vim	/^let g:airline#extensions#tabline#buffer_nr_show = 1$/;"	v
+g:airline#extensions#tabline#buffer_nr_show	init/init_pConfig.vim	/^let g:airline#extensions#tabline#buffer_nr_show = 1$/;"	v
+g:airline#extensions#tabline#enabled	init.vim	/^let g:airline#extensions#tabline#enabled = 1$/;"	v
+g:airline#extensions#tabline#enabled	init/init_pConfig.vim	/^let g:airline#extensions#tabline#enabled = 1$/;"	v
+g:airline#extensions#tabline#formatter	init.vim	/^let g:airline#extensions#tabline#formatter = 'unique_tail'$/;"	v
+g:airline#extensions#tabline#formatter	init/init_pConfig.vim	/^let g:airline#extensions#tabline#formatter = 'unique_tail'$/;"	v
+g:airline#extensions#tabline#left_alt_sep	init.vim	/^let g:airline#extensions#tabline#left_alt_sep = ''$/;"	v
+g:airline#extensions#tabline#left_alt_sep	init/init_pConfig.vim	/^let g:airline#extensions#tabline#left_alt_sep = ''$/;"	v
+g:airline#extensions#tabline#left_sep	init.vim	/^let g:airline#extensions#tabline#left_sep = ''$/;"	v
+g:airline#extensions#tabline#left_sep	init/init_pConfig.vim	/^let g:airline#extensions#tabline#left_sep = ''$/;"	v
+g:airline#extensions#whitespace#enabled	init.vim	/^let g:airline#extensions#whitespace#enabled = 0$/;"	v
+g:airline#extensions#whitespace#enabled	init/init_pConfig.vim	/^let g:airline#extensions#whitespace#enabled = 0$/;"	v
+g:airline#extensions#whitespace#symbol	init.vim	/^let g:airline#extensions#whitespace#symbol = '!'$/;"	v
+g:airline#extensions#whitespace#symbol	init/init_pConfig.vim	/^let g:airline#extensions#whitespace#symbol = '!'$/;"	v
+g:airline_left_alt_sep	init.vim	/^let g:airline_left_alt_sep = ''$/;"	v
+g:airline_left_alt_sep	init/init_pConfig.vim	/^let g:airline_left_alt_sep = ''$/;"	v
+g:airline_left_sep	init.vim	/^let g:airline_left_sep = ''$/;"	v
+g:airline_left_sep	init/init_pConfig.vim	/^let g:airline_left_sep = ''$/;"	v
+g:airline_powerline_fonts	init.vim	/^let g:airline_powerline_fonts = 1$/;"	v
+g:airline_powerline_fonts	init/init_pConfig.vim	/^let g:airline_powerline_fonts = 1$/;"	v
+g:airline_right_alt_sep	init.vim	/^let g:airline_right_alt_sep = ''$/;"	v
+g:airline_right_alt_sep	init/init_pConfig.vim	/^let g:airline_right_alt_sep = ''$/;"	v
+g:airline_right_sep	init.vim	/^let g:airline_right_sep = ''$/;"	v
+g:airline_right_sep	init/init_pConfig.vim	/^let g:airline_right_sep = ''$/;"	v
+g:airline_theme	init.vim	/^let g:airline_theme = 'onehalfdark'$/;"	v
+g:airline_theme	init/init_pConfig.vim	/^let g:airline_theme = 'onehalfdark'$/;"	v
+g:asyncrun_bell	init.vim	/^let g:asyncrun_bell = 1$/;"	v
+g:asyncrun_bell	init/init_pConfig.vim	/^let g:asyncrun_bell = 1$/;"	v
+g:asyncrun_open	init.vim	/^let g:asyncrun_open = 6$/;"	v
+g:asyncrun_open	init/init_pConfig.vim	/^let g:asyncrun_open = 6$/;"	v
+g:asyncrun_rootmarks	init.vim	/^let g:asyncrun_rootmarks = ['.svn', '.git', '.root', '_darcs', 'build.xml']$/;"	v
+g:asyncrun_rootmarks	init/init_pConfig.vim	/^let g:asyncrun_rootmarks = ['.svn', '.git', '.root', '_darcs', 'build.xml']$/;"	v
+g:autoim_toggle_shortcut	init.vim	/^let g:autoim_toggle_shortcut = 'ctrl_space'$/;"	v
+g:autoim_toggle_shortcut	init/init_pConfig.vim	/^let g:autoim_toggle_shortcut = 'ctrl_space'$/;"	v
+g:coc_default_semantic_highlight_groups	init/init-coc.vim	/^let g:coc_default_semantic_highlight_groups=1$/;"	v
+g:coc_disable_transparent_cursor	init/init-coc.vim	/^let g:coc_disable_transparent_cursor = 1$/;"	v
+g:coc_explorer_global_presets	init/init-coc.vim	/^let g:coc_explorer_global_presets = {$/;"	v
+g:coc_snippet_next	init/init-coc.vim	/^let g:coc_snippet_next = '<c-l>'$/;"	v
+g:coc_snippet_prev	init/init-coc.vim	/^let g:coc_snippet_prev = '<c-h>'$/;"	v
+g:cpp_attributes_highlight	init.vim	/^let g:cpp_attributes_highlight = 1$/;"	v
+g:cpp_attributes_highlight	init/init_pConfig.vim	/^let g:cpp_attributes_highlight = 1$/;"	v
+g:cpp_class_decl_highlight	init.vim	/^let g:cpp_class_decl_highlight = 1$/;"	v
+g:cpp_class_decl_highlight	init/init_pConfig.vim	/^let g:cpp_class_decl_highlight = 1$/;"	v
+g:cpp_class_scope_highlight	init.vim	/^let g:cpp_class_scope_highlight = 1$/;"	v
+g:cpp_class_scope_highlight	init/init_pConfig.vim	/^let g:cpp_class_scope_highlight = 1$/;"	v
+g:cpp_concepts_highlight	init.vim	/^let g:cpp_concepts_highlight = 1$/;"	v
+g:cpp_concepts_highlight	init/init_pConfig.vim	/^let g:cpp_concepts_highlight = 1$/;"	v
+g:cpp_function_highlight	init.vim	/^let g:cpp_function_highlight = 1$/;"	v
+g:cpp_function_highlight	init/init_pConfig.vim	/^let g:cpp_function_highlight = 1$/;"	v
+g:cpp_member_highlight	init.vim	/^let g:cpp_member_highlight = 1$/;"	v
+g:cpp_member_highlight	init/init_pConfig.vim	/^let g:cpp_member_highlight = 1$/;"	v
+g:cpp_member_variable_highlight	init.vim	/^let g:cpp_member_variable_highlight = 1$/;"	v
+g:cpp_member_variable_highlight	init/init_pConfig.vim	/^let g:cpp_member_variable_highlight = 1$/;"	v
+g:cpp_no_function_highlight	init.vim	/^let g:cpp_no_function_highlight = 0$/;"	v
+g:cpp_no_function_highlight	init/init_pConfig.vim	/^let g:cpp_no_function_highlight = 0$/;"	v
+g:cpp_posix_standard	init.vim	/^let g:cpp_posix_standard = 1$/;"	v
+g:cpp_posix_standard	init/init_pConfig.vim	/^let g:cpp_posix_standard = 1$/;"	v
+g:cpp_simple_highlight	init.vim	/^let g:cpp_simple_highlight = 1$/;"	v
+g:cpp_simple_highlight	init/init_pConfig.vim	/^let g:cpp_simple_highlight = 1$/;"	v
+g:ctags_version	init.vim	/^let g:ctags_version = system('ctags --version')[0:8]$/;"	v
+g:ctags_version	init/init_pConfig.vim	/^let g:ctags_version = system('ctags --version')[0:8]$/;"	v
+g:echodoc_enable_at_startup	init.vim	/^let g:echodoc_enable_at_startup = 1$/;"	v
+g:echodoc_enable_at_startup	init/init_pConfig.vim	/^let g:echodoc_enable_at_startup = 1$/;"	v
+g:floaterm_height	init.vim	/^let g:floaterm_height=0.3$/;"	v
+g:floaterm_height	init/init_pConfig.vim	/^let g:floaterm_height=0.3$/;"	v
+g:floaterm_keymap_toggle	init.vim	/^let g:floaterm_keymap_toggle = '<F12>'$/;"	v
+g:floaterm_keymap_toggle	init/init_pConfig.vim	/^let g:floaterm_keymap_toggle = '<F12>'$/;"	v
+g:floaterm_position	init.vim	/^let g:floaterm_position='belowright'$/;"	v
+g:floaterm_position	init/init_pConfig.vim	/^let g:floaterm_position='belowright'$/;"	v
+g:floaterm_width	init.vim	/^let g:floaterm_width=0.3$/;"	v
+g:floaterm_width	init/init_pConfig.vim	/^let g:floaterm_width=0.3$/;"	v
+g:floaterm_wintype	init.vim	/^let g:floaterm_wintype='vsplit' $/;"	v
+g:floaterm_wintype	init/init_pConfig.vim	/^let g:floaterm_wintype='vsplit' $/;"	v
+g:gutentags_auto_add_gtags_cscope	init.vim	/^let g:gutentags_auto_add_gtags_cscope = 1$/;"	v
+g:gutentags_auto_add_gtags_cscope	init/init_pConfig.vim	/^let g:gutentags_auto_add_gtags_cscope = 1$/;"	v
+g:gutentags_cache_dir	init.vim	/^let g:gutentags_cache_dir = s:vim_tags$/;"	v
+g:gutentags_cache_dir	init/init_pConfig.vim	/^let g:gutentags_cache_dir = s:vim_tags$/;"	v
+g:gutentags_ctags_extra_args	init.vim	/^  let g:gutentags_ctags_extra_args += ['--extras=+q', '--output-format=e-ctags']$/;"	v
+g:gutentags_ctags_extra_args	init.vim	/^let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']$/;"	v
+g:gutentags_ctags_extra_args	init.vim	/^let g:gutentags_ctags_extra_args += ['--c-kinds=+px']$/;"	v
+g:gutentags_ctags_extra_args	init.vim	/^let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']$/;"	v
+g:gutentags_ctags_extra_args	init/init_pConfig.vim	/^  let g:gutentags_ctags_extra_args += ['--extras=+q', '--output-format=e-ctags']$/;"	v
+g:gutentags_ctags_extra_args	init/init_pConfig.vim	/^let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']$/;"	v
+g:gutentags_ctags_extra_args	init/init_pConfig.vim	/^let g:gutentags_ctags_extra_args += ['--c-kinds=+px']$/;"	v
+g:gutentags_ctags_extra_args	init/init_pConfig.vim	/^let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']$/;"	v
+g:gutentags_ctags_tagfile	init.vim	/^let g:gutentags_ctags_tagfile = '.tags'$/;"	v
+g:gutentags_ctags_tagfile	init/init_pConfig.vim	/^let g:gutentags_ctags_tagfile = '.tags'$/;"	v
+g:gutentags_define_advanced_commands	init.vim	/^let g:gutentags_define_advanced_commands = 1$/;"	v
+g:gutentags_define_advanced_commands	init/init_pConfig.vim	/^let g:gutentags_define_advanced_commands = 1$/;"	v
+g:gutentags_modules	init.vim	/^	let g:gutentags_modules += ['ctags']$/;"	v
+g:gutentags_modules	init.vim	/^	let g:gutentags_modules += ['gtags_cscope']$/;"	v
+g:gutentags_modules	init.vim	/^let g:gutentags_modules = []$/;"	v
+g:gutentags_modules	init/init_pConfig.vim	/^	let g:gutentags_modules += ['ctags']$/;"	v
+g:gutentags_modules	init/init_pConfig.vim	/^	let g:gutentags_modules += ['gtags_cscope']$/;"	v
+g:gutentags_modules	init/init_pConfig.vim	/^let g:gutentags_modules = []$/;"	v
+g:gutentags_plus_switch	init.vim	/^let g:gutentags_plus_switch = 1$/;"	v
+g:gutentags_plus_switch	init/init_pConfig.vim	/^let g:gutentags_plus_switch = 1$/;"	v
+g:gutentags_project_root	init.vim	/^let g:gutentags_project_root = ['.root', '.svn', '.git', '.hg', '.project']$/;"	v
+g:gutentags_project_root	init/init_pConfig.vim	/^let g:gutentags_project_root = ['.root', '.svn', '.git', '.hg', '.project']$/;"	v
+g:gutentags_trace	init.vim	/^let g:gutentags_trace = 0$/;"	v
+g:gutentags_trace	init/init_pConfig.vim	/^let g:gutentags_trace = 0$/;"	v
+g:hlchunk_chars	init.vim	/^  let g:hlchunk_chars=['─', '─', '╭', '│', '╰', '─', '>']$/;"	v
+g:hlchunk_chars	init/init_pConfig.vim	/^  let g:hlchunk_chars=['─', '─', '╭', '│', '╰', '─', '>']$/;"	v
+g:hlchunk_col_limit	init.vim	/^  let g:hlchunk_col_limit = 500$/;"	v
+g:hlchunk_col_limit	init/init_pConfig.vim	/^  let g:hlchunk_col_limit = 500$/;"	v
+g:hlchunk_files	init.vim	/^  let g:hlchunk_files = '*.ts,*.js,*.json,*.go,*.c,*.cpp,*.rs,*.h,*.hpp,*.lua,*.sh'$/;"	v
+g:hlchunk_files	init/init_pConfig.vim	/^  let g:hlchunk_files = '*.ts,*.js,*.json,*.go,*.c,*.cpp,*.rs,*.h,*.hpp,*.lua,*.sh'$/;"	v
+g:hlchunk_hi_style	init.vim	/^  let g:hlchunk_hi_style = 'ctermfg=244'$/;"	v
+g:hlchunk_hi_style	init/init_pConfig.vim	/^  let g:hlchunk_hi_style = 'ctermfg=244'$/;"	v
+g:hlchunk_line_limit	init.vim	/^  let g:hlchunk_line_limit = 5000$/;"	v
+g:hlchunk_line_limit	init/init_pConfig.vim	/^  let g:hlchunk_line_limit = 5000$/;"	v
+g:hlchunk_time_delay	init.vim	/^  let g:hlchunk_time_delay = 50$/;"	v
+g:hlchunk_time_delay	init/init_pConfig.vim	/^  let g:hlchunk_time_delay = 50$/;"	v
+g:lightline	init.vim	/^let g:lightline = {$/;"	v
+g:lightline	init/init_pConfig.vim	/^let g:lightline = {$/;"	v
+g:lsp_cxx_hl_use_text_props	init.vim	/^let g:lsp_cxx_hl_use_text_props = 1$/;"	v
+g:lsp_cxx_hl_use_text_props	init/init_pConfig.vim	/^let g:lsp_cxx_hl_use_text_props = 1$/;"	v
+g:mkdp_path_to_chrome	init.vim	/^let g:mkdp_path_to_chrome='\/usr\/bin\/google-chrome'$/;"	v
+g:mkdp_path_to_chrome	init/init_pConfig.vim	/^let g:mkdp_path_to_chrome='\/usr\/bin\/google-chrome'$/;"	v
+g:mkdp_theme	nvim/ftplugin/markdown.vim	/^        let g:mkdp_theme = 'dark'$/;"	v
+g:mkdp_theme	nvim/ftplugin/markdown.vim	/^        let g:mkdp_theme = 'light'$/;"	v
+g:neovide_confirm_quit	init/init-neovide.vim	/^    let g:neovide_confirm_quit = v:true$/;"	v
+g:neovide_cursor_antialiasing	init/init-neovide.vim	/^    let g:neovide_cursor_antialiasing = v:true$/;"	v
+g:neovide_remember_window_size	init/init-neovide.vim	/^    let g:neovide_remember_window_size = v:true$/;"	v
+g:neovide_scale_factor	init/init-neovide.vim	/^      let g:neovide_scale_factor = g:neovide_scale_factor * a:delta$/;"	v
+g:neovide_scale_factor	init/init-neovide.vim	/^    let g:neovide_scale_factor=1.0$/;"	v
+g:omni_sql_no_default_maps	nvim/ftplugin/mysql.vim	/^let g:omni_sql_no_default_maps = 1$/;"	v
+g:omni_sql_no_default_maps	nvim/ftplugin/sql.vim	/^let g:omni_sql_no_default_maps = 1$/;"	v
+g:python3_host_prog	init.vim	/^let g:python3_host_prog = '\/usr\/bin\/python3'$/;"	v
+g:python3_host_prog	init/init_pConfig.vim	/^let g:python3_host_prog = '\/usr\/bin\/python3'$/;"	v
+g:python3_host_skip_check	init.vim	/^let g:python3_host_skip_check=1$/;"	v
+g:python3_host_skip_check	init/init_pConfig.vim	/^let g:python3_host_skip_check=1$/;"	v
+g:python_host_prog	init.vim	/^let g:python_host_prog = '\/usr\/bin\/python'$/;"	v
+g:python_host_prog	init/init_pConfig.vim	/^let g:python_host_prog = '\/usr\/bin\/python'$/;"	v
+g:python_host_skip_check	init.vim	/^let g:python_host_skip_check=1$/;"	v
+g:python_host_skip_check	init/init_pConfig.vim	/^let g:python_host_skip_check=1$/;"	v
+g:vim_markdown_math	init.vim	/^let g:vim_markdown_math = 1$/;"	v
+g:vim_markdown_math	init/init_pConfig.vim	/^let g:vim_markdown_math = 1$/;"	v
+g:webdevicons_conceal_nerdtree_brackets	init.vim	/^let g:webdevicons_conceal_nerdtree_brackets = 1$/;"	v
+g:webdevicons_conceal_nerdtree_brackets	init/init_pConfig.vim	/^let g:webdevicons_conceal_nerdtree_brackets = 1$/;"	v
+g:webdevicons_enable_airline_statusline	init.vim	/^let g:webdevicons_enable_airline_statusline = 1$/;"	v
+g:webdevicons_enable_airline_statusline	init/init_pConfig.vim	/^let g:webdevicons_enable_airline_statusline = 1$/;"	v
+g:webdevicons_enable_airline_tabline	init.vim	/^let g:webdevicons_enable_airline_tabline = 1$/;"	v
+g:webdevicons_enable_airline_tabline	init/init_pConfig.vim	/^let g:webdevicons_enable_airline_tabline = 1$/;"	v
+g:webdevicons_enable_nerdtree	init.vim	/^let g:webdevicons_enable_nerdtree = 1$/;"	v
+g:webdevicons_enable_nerdtree	init/init_pConfig.vim	/^let g:webdevicons_enable_nerdtree = 1$/;"	v
+gd	init/init-coc.vim	/^nmap <silent> gd <Plug>(coc-definition)$/;"	m
+generate-compile-database-from-makefile	task_template.ini	/^[generate-compile-database-from-makefile]$/;"	s
+gi	init/init-coc.vim	/^nmap <silent> gi <Plug>(coc-implementation)$/;"	m
+git.addGBlameToBufferVar	nvim/coc-settings.json	/^    "git.addGBlameToBufferVar": true,$/;"	b
+git.addGBlameToVirtualText	nvim/coc-settings.json	/^    "git.addGBlameToVirtualText": false,$/;"	b
+git.addedSign.hlGroup	nvim/coc-settings.json	/^    "git.addedSign.hlGroup": "GitGutterAdd",$/;"	s
+git.addedSign.text	coc-settings.json	/^  "git.addedSign.text": "",$/;"	s
+git.addedSign.text	nvim/coc-settings.json	/^    "git.addedSign.text": "┃",$/;"	s
+git.branchCharacter	coc-settings.json	/^  "git.branchCharacter": "",$/;"	s
+git.branchCharacter	nvim/coc-settings.json	/^    "git.branchCharacter": "",$/;"	s
+git.changeRemovedSign.hlGroup	nvim/coc-settings.json	/^    "git.changeRemovedSign.hlGroup": "GitGutterDelete",$/;"	s
+git.changeRemovedSign.text	coc-settings.json	/^  "git.changeRemovedSign.text": "≃",$/;"	s
+git.changeRemovedSign.text	nvim/coc-settings.json	/^    "git.changeRemovedSign.text": "≃",$/;"	s
+git.changedDecorator	coc-settings.json	/^  "git.changedDecorator": "*",$/;"	s
+git.changedSign.hlGroup	nvim/coc-settings.json	/^    "git.changedSign.hlGroup": "GitGutterChange",$/;"	s
+git.changedSign.text	coc-settings.json	/^  "git.changedSign.text": "~",$/;"	s
+git.changedSign.text	nvim/coc-settings.json	/^    "git.changedSign.text": "┃",$/;"	s
+git.conflictedDecorator	coc-settings.json	/^  "git.conflictedDecorator": "x",$/;"	s
+git.enableGutters	nvim/coc-settings.json	/^    "git.enableGutters": true,$/;"	b
+git.floatConfig	nvim/coc-settings.json	/^    "git.floatConfig": { "border": true, "rounded": true },$/;"	o
+git.removedSign.hlGroup	nvim/coc-settings.json	/^    "git.removedSign.hlGroup": "GitGutterDelete",$/;"	s
+git.removedSign.text	coc-settings.json	/^  "git.removedSign.text": "_",$/;"	s
+git.removedSign.text	nvim/coc-settings.json	/^    "git.removedSign.text": "▁",$/;"	s
+git.showCommitInFloating	nvim/coc-settings.json	/^    "git.showCommitInFloating": true,$/;"	b
+git.splitWindowCommand	nvim/coc-settings.json	/^    "git.splitWindowCommand": "below 10sp",$/;"	s
+git.stagedDecorator	coc-settings.json	/^  "git.stagedDecorator": "●",$/;"	s
+git.topRemovedSign.hlGroup	nvim/coc-settings.json	/^    "git.topRemovedSign.hlGroup": "GitGutterDelete",$/;"	s
+git.topRemovedSign.text	coc-settings.json	/^  "git.topRemovedSign.text": "‾",$/;"	s
+git.topRemovedSign.text	nvim/coc-settings.json	/^    "git.topRemovedSign.text": "▔",$/;"	s
+git.untrackedDecorator	coc-settings.json	/^  "git.untrackedDecorator": "…",$/;"	s
+go.goplsOptions	coc-settings.json	/^  "go.goplsOptions": {$/;"	o
+go.goplsOptions	nvim/coc-settings.json	/^    "go.goplsOptions": {$/;"	o
+golang	nvim/ftplugin/go.vim	/^augroup golang$/;"	a
+gr	init/init-coc.vim	/^nmap <silent> gr <Plug>(coc-references)$/;"	m
+gy	init/init-coc.vim	/^nmap <silent> gy <Plug>(coc-type-definition)$/;"	m
+hover.floatConfig	nvim/coc-settings.json	/^    "hover.floatConfig": { "border": true, "rounded": true, "focusable": true },$/;"	o
+hoverKind	coc-settings.json	/^      "hoverKind": "SynopsisDocumentation"$/;"	s	object:go.goplsOptions
+ic	init/init-coc.vim	/^omap ic <Plug>(coc-classobj-i)$/;"	m
+ic	init/init-coc.vim	/^xmap ic <Plug>(coc-classobj-i)$/;"	m
+if	init/init-coc.vim	/^omap if <Plug>(coc-funcobj-i)$/;"	m
+if	init/init-coc.vim	/^xmap if <Plug>(coc-funcobj-i)$/;"	m
+initializationOptions	coc-settings.json	/^      "initializationOptions": {$/;"	o	object:languageserver.cmake
+inlayHint.enable	coc-settings.json	/^  "inlayHint.enable": false,$/;"	b
+inlayHint.enable	nvim/coc-settings.json	/^    "inlayHint.enable": false,$/;"	b
+interface	coc-settings.json	/^    "interface": "",$/;"	s	object:suggest.completionItemKindLabels
+java.clean.workspace	nvim/coc-settings.json	/^    "java.clean.workspace": true,$/;"	b
+java.configuration.runtimes	nvim/coc-settings.json	/^    "java.configuration.runtimes": [$/;"	a
+javascript	coc-settings.json	/^    "javascript": ["javascript"],$/;"	a	object:snippets.extends
+keyword	coc-settings.json	/^    "keyword": "",$/;"	s	object:suggest.completionItemKindLabels
+languageserver	coc-settings.json	/^  "languageserver": {$/;"	o
+linux	task_template.ini	/^command\/linux=_builds\/$(VIM_PRONAME)$/;"	k	section:project-run
+linux	task_template.ini	/^command\/linux=_builds\/$(VIM_PRONAME)$/;"	k	section:project-run:cmake
+linux	task_template.ini	/^command\/linux=bear make$/;"	k	section:generate-compile-database-from-makefile
+linux	task_template.ini	/^command\/linux=cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -DCMAKE_BUILD_TYPE=Debug -S. -B_builds$/;"	k	section:project-configure
+linux	task_template.ini	/^command\/linux=cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -DCMAKE_BUILD_TYPE=Debug -S. -B_builds$/;"	k	section:project-configure:debug
+linux	task_template.ini	/^command\/linux=cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -DCMAKE_BUILD_TYPE=Release -S. -B_builds$/;"	k	section:project-configure:release
+linux	task_template.ini	/^command\/linux=make clean distclean$/;"	k	section:project-clean:make
+linux	task_template.ini	/^command\/linux=make run$/;"	k	section:project-run:make
+linux	task_template.ini	/^command\/linux=make$/;"	k	section:project-build:make
+linux	task_template.ini	/^command\/linux=rm -rf _builds$/;"	k	section:project-clean
+linux	task_template.ini	/^command\/linux=rm -rf _builds$/;"	k	section:project-clean:cmake
+list.alignColumns	nvim/coc-settings.json	/^    "list.alignColumns": true,$/;"	b
+list.autoPreview	nvim/coc-settings.json	/^    "list.autoPreview": true,$/;"	b
+list.floatPreview	nvim/coc-settings.json	/^    "list.floatPreview": true,$/;"	b
+list.source.files.args	coc-settings.json	/^  "list.source.files.args": ["--hidden", "--files"],$/;"	a
+list.source.files.defaultOptions	coc-settings.json	/^  "list.source.files.defaultOptions": ["--number-select"],$/;"	a
+lua/keymap.lua 快捷键相关配置说明	nvim/README.md	/^## lua\/keymap.lua 快捷键相关配置说明$/;"	s
+lua/packinit.lua 插件相关的配置说明	nvim/README.md	/^## lua\/packinit.lua 插件相关的配置说明$/;"	s
+lua/profile.lua 通用基础配置说明	nvim/README.md	/^## lua\/profile.lua 通用基础配置说明$/;"	s
+method	coc-settings.json	/^    "method": "",$/;"	s	object:suggest.completionItemKindLabels
+module	coc-settings.json	/^    "module": "󰕳",$/;"	s	object:suggest.completionItemKindLabels
+my	init.vim	/^augroup my-glyph-palette$/;"	a
+my	init/init_pConfig.vim	/^augroup my-glyph-palette$/;"	a
+mygroup	init/init-coc.vim	/^augroup mygroup$/;"	a
+name	nvim/coc-settings.json	/^            "name": "JavaSE-14",$/;"	s	object:java.configuration.runtimes.0
+namespace	coc-settings.json	/^    "namespace": "",$/;"	s	object:suggest.completionItemKindLabels
+neovim-config	README.md	/^# neovim-config$/;"	c
+notification.disabledProgressSources	nvim/coc-settings.json	/^    "notification.disabledProgressSources": ["*"],$/;"	a
+notify	task_template.ini	/^notify=echo$/;"	k	section:asm-build
+notify	task_template.ini	/^notify=echo$/;"	k	section:asm-build:x32
+notify	task_template.ini	/^notify=echo$/;"	k	section:clang-tidy
+notify	task_template.ini	/^notify=echo$/;"	k	section:clazy
+notify	task_template.ini	/^notify=echo$/;"	k	section:cloc
+notify	task_template.ini	/^notify=echo$/;"	k	section:file-build
+notify	task_template.ini	/^notify=echo$/;"	k	section:generate-compile-database-from-makefile
+notify	task_template.ini	/^notify=echo$/;"	k	section:project-build
+notify	task_template.ini	/^notify=echo$/;"	k	section:project-build:cargo
+notify	task_template.ini	/^notify=echo$/;"	k	section:project-build:cmake
+notify	task_template.ini	/^notify=echo$/;"	k	section:project-build:make
+notify	task_template.ini	/^notify=echo$/;"	k	section:project-clean
+notify	task_template.ini	/^notify=echo$/;"	k	section:project-clean:cmake
+notify	task_template.ini	/^notify=echo$/;"	k	section:project-clean:make
+notify	task_template.ini	/^notify=echo$/;"	k	section:project-configure
+notify	task_template.ini	/^notify=echo$/;"	k	section:project-configure:debug
+notify	task_template.ini	/^notify=echo$/;"	k	section:project-configure:release
+notify	task_template.ini	/^notify=echo$/;"	k	section:project-test:cargo
+open-doc	task_template.ini	/^[open-doc]$/;"	s
+open-doc:cmake	task_template.ini	/^[open-doc:cmake]$/;"	s
+open_fn	nvim/lua/packinit.lua	/^            open_fn = function() return require("packer.util").float({ border = "rounded" }) end$/;"	f
+open_win_config	nvim/lua/pack/nvim-tree.lua	/^                open_win_config = function()$/;"	f
+operator	coc-settings.json	/^    "operator": "洛",$/;"	s	object:suggest.completionItemKindLabels
+outline.autoPreview	coc-settings.json	/^  "outline.autoPreview": false,$/;"	b
+outline.autoPreview	nvim/coc-settings.json	/^    "outline.autoPreview": true,$/;"	b
+outline.autoWidth	coc-settings.json	/^  "outline.autoWidth": true,$/;"	b
+outline.previewMaxWidth	coc-settings.json	/^  "outline.previewMaxWidth": 50,$/;"	n
+output	task_template.ini	/^output=quickfix$/;"	k	section:asm-build
+output	task_template.ini	/^output=quickfix$/;"	k	section:asm-build:x32
+output	task_template.ini	/^output=quickfix$/;"	k	section:file-build
+output	task_template.ini	/^output=quickfix$/;"	k	section:project-build:cargo
+output	task_template.ini	/^output=terminal$/;"	k	section:file-run
+output	task_template.ini	/^output=terminal$/;"	k	section:project-run
+output	task_template.ini	/^output=terminal$/;"	k	section:project-run:cargo
+output	task_template.ini	/^output=terminal$/;"	k	section:project-run:cmake
+output	task_template.ini	/^output=terminal$/;"	k	section:project-run:make
+pairs.enableBackspace	nvim/coc-settings.json	/^    "pairs.enableBackspace": true,$/;"	b
+pairs.enableCharacters	nvim/coc-settings.json	/^    "pairs.enableCharacters": ["(", "[", "{", "'", "\\"", "`"],$/;"	a
+path	nvim/coc-settings.json	/^            "path": "\/opt\/jdk-14.0.2",$/;"	s	object:java.configuration.runtimes.0
+prettier	nvim/coc-settings.json	/^    "prettier": {$/;"	o
+printWidth	nvim/coc-settings.json	/^        "printWidth": 160,$/;"	n	object:prettier
+project-build	task_template.ini	/^[project-build]$/;"	s
+project-build:cargo	task_template.ini	/^[project-build:cargo]$/;"	s
+project-build:cmake	task_template.ini	/^[project-build:cmake]$/;"	s
+project-build:make	task_template.ini	/^[project-build:make]$/;"	s
+project-clean	task_template.ini	/^[project-clean]$/;"	s
+project-clean:cmake	task_template.ini	/^[project-clean:cmake]$/;"	s
+project-clean:make	task_template.ini	/^[project-clean:make]$/;"	s
+project-configure	task_template.ini	/^[project-configure]$/;"	s
+project-configure:debug	task_template.ini	/^[project-configure:debug]$/;"	s
+project-configure:release	task_template.ini	/^[project-configure:release]$/;"	s
+project-run	task_template.ini	/^[project-run]$/;"	s
+project-run:cargo	task_template.ini	/^[project-run:cargo]$/;"	s
+project-run:cmake	task_template.ini	/^[project-run:cmake]$/;"	s
+project-run:make	task_template.ini	/^[project-run:make]$/;"	s
+project-test:cargo	task_template.ini	/^[project-test:cargo]$/;"	s
+property	coc-settings.json	/^    "property": "襁",$/;"	s	object:suggest.completionItemKindLabels
+pyright.disableDiagnostics	coc-settings.json	/^  "pyright.disableDiagnostics": true,$/;"	b
+pyright.inlayHints.enable	nvim/coc-settings.json	/^    "pyright.inlayHints.enable": false,$/;"	b
+python.pythonPath	coc-settings.json	/^  "python.pythonPath": "\/home\/joe\/Anaconda\/bin\/python",$/;"	s
+reference	coc-settings.json	/^    "reference": "",$/;"	s	object:suggest.completionItemKindLabels
+rootPatterns	coc-settings.json	/^      "rootPatterns": ["build\/"],$/;"	a	object:languageserver.cmake
+rounded	nvim/coc-settings.json	/^    "diagnostic.floatConfig": { "border": true, "rounded": true },$/;"	b	object:diagnostic.floatConfig
+rounded	nvim/coc-settings.json	/^    "git.floatConfig": { "border": true, "rounded": true },$/;"	b	object:git.floatConfig
+rounded	nvim/coc-settings.json	/^    "hover.floatConfig": { "border": true, "rounded": true, "focusable": true },$/;"	b	object:hover.floatConfig
+rounded	nvim/coc-settings.json	/^    "signature.floatConfig": { "border": true, "rounded": true },$/;"	b	object:signature.floatConfig
+rounded	nvim/coc-settings.json	/^    "suggest.floatConfig": { "border": true, "rounded": true },$/;"	b	object:suggest.floatConfig
+s:gfor	nvim/ftplugin/go.vim	/^func s:gfor()$/;"	f
+s:home	init.vim	/^let s:home = fnamemodify(resolve(expand('<sfile>:p')), ':h')$/;"	v
+s:loaded	init.vim	/^	let s:loaded = 1$/;"	v
+s:loaded	nvim/colors/solarized8_high.vim	/^let s:loaded = 1$/;"	v
+s:my_colors_setup	init/init-highlight.vim	/^func! s:my_colors_setup() abort$/;"	f
+s:toggleMPTheme	nvim/ftplugin/markdown.vim	/^fun! s:toggleMPTheme()$/;"	f
+s:toggleTodoStatus	nvim/ftplugin/markdown.vim	/^fun! s:toggleTodoStatus()$/;"	f
+s:vim_tags	init.vim	/^let s:vim_tags = expand('~\/.cache\/tags')$/;"	v
+s:vim_tags	init/init_pConfig.vim	/^let s:vim_tags = expand('~\/.cache\/tags')$/;"	v
+save	task_template.ini	/^save=2$/;"	k	section:asm-build
+save	task_template.ini	/^save=2$/;"	k	section:asm-build:x32
+save	task_template.ini	/^save=2$/;"	k	section:file-build
+save	task_template.ini	/^save=2$/;"	k	section:file-run
+save	task_template.ini	/^save=2$/;"	k	section:project-build
+save	task_template.ini	/^save=2$/;"	k	section:project-build:cargo
+save	task_template.ini	/^save=2$/;"	k	section:project-build:cmake
+save	task_template.ini	/^save=2$/;"	k	section:project-build:make
+save	task_template.ini	/^save=2$/;"	k	section:project-configure
+save	task_template.ini	/^save=2$/;"	k	section:project-configure:debug
+save	task_template.ini	/^save=2$/;"	k	section:project-configure:release
+save	task_template.ini	/^save=2$/;"	k	section:project-test:cargo
+save_profiles	nvim/plugin/packer_compiled.lua	/^local function save_profiles(threshold)$/;"	f
+semanticTokens.enable	coc-settings.json	/^  "semanticTokens.enable": true,$/;"	b
+signature.floatConfig	nvim/coc-settings.json	/^    "signature.floatConfig": { "border": true, "rounded": true },$/;"	o
+singleQuote	nvim/coc-settings.json	/^        "singleQuote": true,$/;"	b	object:prettier
+snippet	coc-settings.json	/^    "snippet": "",$/;"	s	object:suggest.completionItemKindLabels
+snippets.extends	coc-settings.json	/^  "snippets.extends": {$/;"	o
+snippets.extends.javascript	nvim/coc-settings.json	/^    "snippets.extends.javascript": ["typescript"],$/;"	a
+snippets.ultisnips.directories	nvim/coc-settings.json	/^    "snippets.ultisnips.directories": ["~\/.config\/nvim\/snippets\/ultisnips"],$/;"	a
+snippets.userSnippetsDirectory	nvim/coc-settings.json	/^    "snippets.userSnippetsDirectory": "~\/.config\/nvim\/snippets",$/;"	s
+staticcheck	nvim/coc-settings.json	/^        "staticcheck": true$/;"	b	object:go.goplsOptions
+struct	coc-settings.json	/^    "struct": "פּ",$/;"	s	object:suggest.completionItemKindLabels
+suggest.autoTrigger	coc-settings.json	/^  "suggest.autoTrigger": "always",$/;"	s
+suggest.completionItemKindLabels	coc-settings.json	/^  "suggest.completionItemKindLabels": {$/;"	o
+suggest.defaultSortMethod	coc-settings.json	/^  "suggest.defaultSortMethod": "length",$/;"	s
+suggest.floatConfig	nvim/coc-settings.json	/^    "suggest.floatConfig": { "border": true, "rounded": true },$/;"	o
+suggest.formatItems	coc-settings.json	/^  "suggest.formatItems": ["kind","abbr","menu"],\/\/["abbr", "menu", "kind", "shortcut"],$/;"	a
+suggest.noselect	coc-settings.json	/^  "suggest.noselect": false,$/;"	b
+suggest.virtualText	coc-settings.json	/^  "suggest.virtualText": false,$/;"	b
+tabWidth	nvim/coc-settings.json	/^        "tabWidth": 4,$/;"	n	object:prettier
+tabnine.priority	nvim/coc-settings.json	/^    "tabnine.priority": 80,$/;"	n
+text	coc-settings.json	/^    "text": "",$/;"	s	object:suggest.completionItemKindLabels
+time	nvim/plugin/packer_compiled.lua	/^  time = function(chunk, start) end$/;"	f
+time	nvim/plugin/packer_compiled.lua	/^  time = function(chunk, start)$/;"	f
+translator.engines	coc-settings.json	/^  "translator.engines": ["bing", "youdao"],$/;"	a
+translator.engines	nvim/coc-settings.json	/^    "translator.engines": ["youdao"],$/;"	a
+translator.proxy	coc-settings.json	/^  "translator.proxy": "socks:\/\/127.0.0.1:1080",$/;"	s
+try_loadstring	nvim/plugin/packer_compiled.lua	/^local function try_loadstring(s, component, name)$/;"	f
+tsserver.enable	nvim/coc-settings.json	/^    "tsserver.enable": true,$/;"	b
+tsserver.enableJavascript	nvim/coc-settings.json	/^    "tsserver.enableJavascript": true,$/;"	b
+tsserver.trace.server	nvim/coc-settings.json	/^    "tsserver.trace.server": "messages",$/;"	s
+typeParameter	coc-settings.json	/^    "typeParameter": "",$/;"	s	object:suggest.completionItemKindLabels
+typescript	coc-settings.json	/^    "typescript": ["javascript"]$/;"	a	object:snippets.extends
+unit	coc-settings.json	/^    "unit": "",$/;"	s	object:suggest.completionItemKindLabels
+value	coc-settings.json	/^    "value": "",$/;"	s	object:suggest.completionItemKindLabels
+variable	coc-settings.json	/^    "variable": "󱄑",$/;"	s	object:suggest.completionItemKindLabels
+volar.takeOverMode.enabled	nvim/coc-settings.json	/^    "volar.takeOverMode.enabled": true,$/;"	b
+vue	nvim/ftplugin/vue.vim	/^augroup vue$/;"	a
+win32	task_template.ini	/^command\/win32=_builds\\$(VIM_PRONAME).exe$/;"	k	section:project-run
+win32	task_template.ini	/^command\/win32=_builds\\$(VIM_PRONAME).exe$/;"	k	section:project-run:cmake
+win32	task_template.ini	/^command\/win32=bear mingw32-make$/;"	k	section:generate-compile-database-from-makefile
+win32	task_template.ini	/^command\/win32=cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefi/;"	k	section:project-configure
+win32	task_template.ini	/^command\/win32=cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefi/;"	k	section:project-configure:debug
+win32	task_template.ini	/^command\/win32=cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -DCMAKE_BUILD_TYPE=Release -G "MinGW Make/;"	k	section:project-configure:release
+win32	task_template.ini	/^command\/win32=mingw32-make clean distclean$/;"	k	section:project-clean:make
+win32	task_template.ini	/^command\/win32=mingw32-make run$/;"	k	section:project-run:make
+win32	task_template.ini	/^command\/win32=mingw32-make$/;"	k	section:project-build:make
+win32	task_template.ini	/^command\/win32=rd\/s\/q _builds$/;"	k	section:project-clean
+win32	task_template.ini	/^command\/win32=rd\/s\/q _builds$/;"	k	section:project-clean:cmake
+z/	init.vim	/^nnoremap z\/ :if AutoHighlightToggle()<Bar>set hls<Bar>endif<CR>$/;"	m
+z/	init/init_pConfig.vim	/^nnoremap z\/ :if AutoHighlightToggle()<Bar>set hls<Bar>endif<CR>$/;"	m
+{nargs	nvim/plugin/packer_compiled.lua	/^        {nargs = '*', range = true, bang = true, complete = function()$/;"	f
+如何使用	nvim/README.md	/^## 如何使用$/;"	s
+插件说明以及键位绑定	nvim/README.md	/^## 插件说明以及键位绑定$/;"	s
+配置结构	nvim/README.md	/^## 配置结构$/;"	s
