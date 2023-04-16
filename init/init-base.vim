@@ -48,6 +48,7 @@ endif
 set guifont=Hack_Mono_Nerd_Font:h20
 " let g:mapleader = "
 set pumblend=15 "补全菜单透明度
+
 set pumheight=10 "补全菜单太长
 set background=dark    " Setting dark mode
 set termguicolors

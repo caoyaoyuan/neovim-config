@@ -17,26 +17,31 @@ let g:autoim_toggle_shortcut = 'ctrl_space'
 nnoremap <silent> <C-l> :nohl<CR><C-l>
 nnoremap <silent> <C-h> :History<CR><C-h>
 "---------------------------Settings------------------------------------------
+"-----------------------------------------------------------------------------
+" LeetCode.vim  
+"-----------------------------------------------------------------------------
+let g:leetcode_china=1
+let g:leetcode_solution_filetype='cpp'
+let g:leetcode_browser='chrome'
+" let g:leetcode_hide_topics=0
+" let g:leetcode_hide_companies=0
 
+"-----------------------------------------------------------------------------
+"-----------------------------------------------------------------------------
+" telescope
+"-----------------------------------------------------------------------------
+nnoremap <space>ff <cmd>lua require('telescope.builtin').find_files()<cr>
+nnoremap <space>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
+nnoremap <space>fb <cmd>lua require('telescope.builtin').buffers()<cr>
+nnoremap <space>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
+nnoremap <space>ft <cmd>lua require('telescope.builtin').current_buffer_tags()<cr>
+nnoremap <space>fz <cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<cr>
+"-----------------------------------------------------------------------------
 "-----------------------------------------------------------------------------
 "plugin markdown 
 "-----------------------------------------------------------------------------
 let g:vim_markdown_math = 1
 let g:mkdp_path_to_chrome='/usr/bin/google-chrome'
-"-----------------------------------------------------------------------------
-"-----------------------------------------------------------------------------
-"plugin lightline
-"-----------------------------------------------------------------------------
-let g:lightline = {
-      \ 'colorscheme': 'one',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch','readonly', 'filename', 'modified' ] ]
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'FugitiveHead'
-      \ },
-      \ }
 "-----------------------------------------------------------------------------
 
 "-----------------------------------------------------------------------------
@@ -51,24 +56,11 @@ let g:floaterm_position='belowright'
 " let g:floaterm_keymap_new    = '<F7>'
 " let g:floaterm_keymap_prev   = '<F8>'
 " let g:floaterm_keymap_next   = '<F9>'
-let g:floaterm_keymap_toggle = '<F12>'
+let g:floaterm_keymap_toggle = '<F3>'
 autocmd TermOpen * setlocal nonumber norelativenumber
 "-----------------------------------------------------------------------------
 
 
-"-----------------------------------------------------------------------------
-"plugin asyncrun
-"-----------------------------------------------------------------------------
-" 自动打开 quickfix window ，高度为 6
-let g:asyncrun_open = 6
-
-" 任务结束时候响铃提醒
-let g:asyncrun_bell = 1
-
-" 设置 F10 打开/关闭 Quickfix 窗口
-nnoremap <F10> :call asyncrun#quickfix_toggle(10)<cr>
-nnoremap <silent> <F9> :AsyncRun g++ -Wall -std=c++14  "$(VIM_FILEPATH)" -o "$(VIM_FILEDIR)/$(VIM_FILENOEXT)" -lpthread <cr>
-nnoremap <silent> <F5> :AsyncRun -cwd=$(VIM_FILEDIR) -mode=4 "$(VIM_FILEDIR)/$(VIM_FILENOEXT)" <cr>
 "nnoremap <silent> <F5> :AsyncRun -raw -cwd=$(VIM_FILEDIR) """$(VIM_FILEDIR)/$(VIM_FILENOEXT)" <cr>
 let g:asyncrun_rootmarks = ['.svn', '.git', '.root', '_darcs', 'build.xml']
 "nnoremap <silent> <F7> :AsyncRun -cwd=<root> make <cr>
@@ -78,25 +70,6 @@ let g:asyncrun_rootmarks = ['.svn', '.git', '.root', '_darcs', 'build.xml']
 "nnoremap <silent> <F4> :AsyncRun -cwd=<root> cmake . <cr>
 
 "----------------------------END  asyncrun------------------------------------
-"-----------------------------------------------------------------------------
-" hlchunk.vim
-"-----------------------------------------------------------------------------
-" 支持哪些文件 默认为 '*.ts,*.js,*.json,*.go,*.c,*.cpp,*.rs,*.h,*.hpp,*.lua'
-  let g:hlchunk_files = '*.ts,*.js,*.json,*.go,*.c,*.cpp,*.rs,*.h,*.hpp,*.lua,*.sh'
-" 缩进线的高亮
-  au VimEnter * hi HLIndentLine ctermfg=244
-" 延时 默认为50
-  let g:hlchunk_time_delay = 50
-" 高亮线符号(逆时针) 默认为 ['─', '─', '╭', '│', '╰', '─', '>']
-  let g:hlchunk_chars=['─', '─', '╭', '│', '╰', '─', '>']
-
-  " 最大支持行数 默认3000(超过5000行的文件不使用hlchunk)
-  let g:hlchunk_line_limit = 5000
-" 最大支持列数 默认100(超过500列的文件不使用hlchunk)
-  let g:hlchunk_col_limit = 500
-" 高亮线的hi样式 默认为 'ctermfg=244'
-  let g:hlchunk_hi_style = 'ctermfg=244'
-"-----------------------------------------------------------------------------
 "-----------------------------------------------------------------------------
 "glyph-palette.vim
 "-----------------------------------------------------------------------------
@@ -123,38 +96,6 @@ set termguicolors | set background=dark
 "         :tab Cppman keyword
 "         :vert botright Cppman keyword
 "-----------------------------------------------------------------------------
-
-"-----------------------------------------------------------------------------
-"plugin vim-cpp-modern
-"-----------------------------------------------------------------------------
-" Disable function highlighting (affects both C and C++ files)
-let g:cpp_function_highlight = 1
-
-" Enable highlighting of C++11 attributes
-let g:cpp_attributes_highlight = 1
-
-" Highlight struct/class member variables (affects both C and C++ files)
-let g:cpp_member_highlight = 1
-
-" Put all standard C and C++ keywords under Vim's highlight group 'Statement'
-" (affects both C and C++ files)
-let g:cpp_simple_highlight = 1
-"-----------------------------------------------------------------------------
-
-"-----------------------------------------------------------------------------
-"plugin - vim-cpp-enhanced-highlight
-"-----------------------------------------------------------------------------
-let g:cpp_class_scope_highlight = 1
-let g:cpp_member_variable_highlight = 1
-let g:cpp_posix_standard = 1
-let g:cpp_class_decl_highlight = 1
-"let g:cpp_experimental_simple_template_highlight = 1
-"let g:cpp_experimental_template_highlight = 1
-let g:cpp_concepts_highlight = 1
-let g:cpp_no_function_highlight = 0
-let c_no_curly_error=1
-"----------------------------END vim-cpp-enhanced-highlight-------------------
-
 
 "-----------------------------------------------------------------------------
 "plugin vim-devicons
@@ -230,31 +171,24 @@ let g:NERDToggleCheckAllLines = 1
 "plugin - LeaderF
 "-----------------------------------------------------------------------------
 let g:Lf_ShowDevIcons = 1
-" let g:Lf_ShortcutF = '<c-p>'
-"let g:Lf_ShortcutB = '<s-n>'
-"文件搜索
-nnoremap <silent> <space>ff :Leaderf file<CR>
-"历史打开过的文件
-nnoremap <silent> <space>fm :Leaderf mru<CR>
-nnoremap <silent> <space>fh :LeaderfHelp<CR>
-"Buffer
-nnoremap <silent> <space>fb :Leaderf buffer<CR>
-nnoremap <silent> <space>fu :Leaderf function<CR>
+" " let g:Lf_ShortcutF = '<c-p>'
+" "let g:Lf_ShortcutB = '<s-n>'
+" "文件搜索
+" nnoremap <silent> <space>ff :Leaderf file<CR>
+" "历史打开过的文件
+" nnoremap <silent> <space>fm :Leaderf mru<CR>
+" nnoremap <silent> <space>fh :LeaderfHelp<CR>
+" "Buffer
+" nnoremap <silent> <space>fb :Leaderf buffer<CR>
+" nnoremap <silent> <space>fu :Leaderf function<CR>
 nnoremap <silent> <space>rg :Leaderf rg<CR>
-noremap <space>ft :<C-U><C-R>=printf("Leaderf bufTag %s", "")<CR><CR>
-noremap <space>fl :<C-U><C-R>=printf("Leaderf line %s", "")<CR><CR>
+" noremap <space>ft :<C-U><C-R>=printf("Leaderf bufTag %s", "")<CR><CR>
+" noremap <space>fl :<C-U><C-R>=printf("Leaderf line %s", "")<CR><CR>
 let g:Lf_ShowRelativePath = 0
 let g:Lf_HideHelp = 1
 let g:Lf_PreviewResult = {'Function':0, 'Colorscheme':1}
 let g:Lf_PopupScheme = 'gruvbox-material'
 let g:Lf_StlSeparator = { 'left': '', 'right': '', 'font': '' }
-"--------------popup------------------
-" let g:Lf_WindowPosition = 'popup'
-" " let g:Lf_PopupPosition=[0,0]
-" let g:Lf_PreviewInPopup = 1
-" "let g:Lf_PreviewHorizontalPosition='bottom'
-" let g:Lf_PreviewCode=1
-" let g:Lf_PopupPreviewPosition='bottom'
 let g:Lf_WindowHeight = 0.30
 " let g:Lf_PopupWidth = 0.65
 let g:Lf_StlSeparator = { 'left': "\ue0b0", 'right': "\ue0b2", 'font': "DejaVu Sans Mono for Powerline" }
@@ -280,6 +214,19 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline#extensions#tabline#left_sep = ''
 let g:airline#extensions#tabline#left_alt_sep = ''
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+" let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+let g:airline#extensions#whitespace#enabled = 0
+let g:airline#extensions#whitespace#symbol = '!'
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
@@ -342,7 +289,6 @@ let g:gutentags_trace = 0
 "-----------------------------------------------------------------------------
 
 "-----------------------------------------------------------------------------
-
 " Highlight all instances of word under cursor, when idle.
 " Useful when studying strange source code.
 " Type z/ to toggle highlighting on/off.

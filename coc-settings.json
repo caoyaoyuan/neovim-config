@@ -2,37 +2,42 @@
   "semanticTokens.enable": true,
   "outline.autoPreview": false,
   "list.source.files.defaultOptions": ["--number-select"],
-  "suggest.formatItems": ["kind","abbr","menu"],//["abbr", "menu", "kind", "shortcut"],
+  "suggest.formatItems": ["abbr", "menu", "kind", "shortcut"],
   "suggest.defaultSortMethod": "length",
   "suggest.autoTrigger": "always",
-  "outline.autoWidth": true,
-  "outline.previewMaxWidth": 50,
+  "outline.autoWidth": false,
+  "outline.previewMaxWidth": 30,
+  "outline.detailAsDescription": false,
   "diagnostic.refreshOnInsertMode": true,
   "explorer.file.child.template": "[selection | clip | 1] [indent][icon | 1] [diagnosticError & 1][filename omitCenter 1][modified][readonly] [linkIcon & 1][link growRight 1 omitCenter 5]",
   "explorer.icon.source": "vim-devicons",
   "explorer.icon.enableNerdfont": true,
   "inlayHint.enable": false,
   "colors.filetypes": ["*"],
+  //"highlight.colors.enable": false,
   "python.pythonPath": "/home/joe/Anaconda/bin/python",
   "pyright.disableDiagnostics": true,
   "diagnostic.warningSign": "󰔶",
   "diagnostic.errorSign": "",
   "translator.proxy": "socks://127.0.0.1:1080",
   "translator.engines": ["bing", "youdao"],
-  "suggest.noselect": false,
-  //"suggest.enablePreselect": true,
   "diagnostic.checkCurrentLine": true,
   "diagnostic.virtualText": false,
   "suggest.virtualText": false,
   "cmake.lsp.enable": true,
   "list.source.files.args": ["--hidden", "--files"],
   "clangd.fallbackFlags": ["-I${workspaceForlder}", "-rdynamic"],
-  "go.goplsOptions": {
-      "hoverKind": "SynopsisDocumentation",
-      "linksInHover": false,
-      "completeUnimported": true
-  },
   "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+      "filetypes": ["go"],
+      "initializationOptions": {
+        "linksInHover": false,
+        "hoverKind": "SynopsisDocumentation"
+        //        "usePlaceholders": true
+      }
+    },
     "cmake": {
       "command": "cmake-language-server",
       "filetypes": ["cmake"],
@@ -58,7 +63,14 @@
   "git.removedSign.text": "_",
   "git.topRemovedSign.text": "‾",
   "git.changeRemovedSign.text": "≃",
-  "coc.preferences.formatOnSaveFiletypes": [".py", ".json", "markdown"],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "go",
+    "python",
+    "json",
+    "lua"
+  ],
   "suggest.completionItemKindLabels": {
     "function": "󰊕",
     "method": "",

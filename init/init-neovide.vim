@@ -9,6 +9,7 @@ if exists("g:neovide")
     endfunction
     nnoremap <expr><C-=> ChangeScaleFactor(1.25)
     nnoremap <expr><C--> ChangeScaleFactor(1/1.25)
+    let g:neovide_transparency = 0.8
     let g:neovide_confirm_quit = v:true
     let g:neovide_remember_window_size = v:true
     let g:neovide_cursor_antialiasing = v:true
