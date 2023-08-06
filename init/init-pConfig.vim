@@ -22,7 +22,7 @@ nnoremap <silent> <C-h> :History<CR><C-h>
 "-----------------------------------------------------------------------------
 let g:leetcode_china=1
 let g:leetcode_solution_filetype='cpp'
-let g:leetcode_browser='chrome'
+let g:leetcode_browser = 'chrome'
 " let g:leetcode_hide_topics=0
 " let g:leetcode_hide_companies=0
 
@@ -30,12 +30,12 @@ let g:leetcode_browser='chrome'
 "-----------------------------------------------------------------------------
 " telescope
 "-----------------------------------------------------------------------------
-nnoremap <space>ff <cmd>lua require('telescope.builtin').find_files()<cr>
-nnoremap <space>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
-nnoremap <space>fb <cmd>lua require('telescope.builtin').buffers()<cr>
-nnoremap <space>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
-nnoremap <space>ft <cmd>lua require('telescope.builtin').current_buffer_tags()<cr>
-nnoremap <space>fz <cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<cr>
+"nnoremap <space>ff <cmd>lua require('telescope.builtin').find_files()<cr>
+"nnoremap <space>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
+"nnoremap <space>fb <cmd>lua require('telescope.builtin').buffers()<cr>
+"nnoremap <space>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
+"nnoremap <space>ft <cmd>lua require('telescope.builtin').current_buffer_tags()<cr>
+"nnoremap <space>fz <cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<cr>
 "-----------------------------------------------------------------------------
 "-----------------------------------------------------------------------------
 "plugin markdown 
@@ -171,27 +171,27 @@ let g:NERDToggleCheckAllLines = 1
 "plugin - LeaderF
 "-----------------------------------------------------------------------------
 let g:Lf_ShowDevIcons = 1
+let g:Lf_DefaultExternalTool='rg'
 " " let g:Lf_ShortcutF = '<c-p>'
 " "let g:Lf_ShortcutB = '<s-n>'
-" "文件搜索
-" nnoremap <silent> <space>ff :Leaderf file<CR>
-" "历史打开过的文件
-" nnoremap <silent> <space>fm :Leaderf mru<CR>
-" nnoremap <silent> <space>fh :LeaderfHelp<CR>
-" "Buffer
-" nnoremap <silent> <space>fb :Leaderf buffer<CR>
-" nnoremap <silent> <space>fu :Leaderf function<CR>
+ "文件搜索
+ nnoremap <silent> <space>ff :Leaderf file<CR>
+ "历史打开过的文件
+ nnoremap <silent> <space>fm :Leaderf mru<CR>
+ nnoremap <silent> <space>fh :LeaderfHelp<CR>
+ "Buffer
+ nnoremap <silent> <space>fb :Leaderf buffer<CR>
+ nnoremap <silent> <space>fu :Leaderf function<CR>
 nnoremap <silent> <space>rg :Leaderf rg<CR>
-" noremap <space>ft :<C-U><C-R>=printf("Leaderf bufTag %s", "")<CR><CR>
-" noremap <space>fl :<C-U><C-R>=printf("Leaderf line %s", "")<CR><CR>
-let g:Lf_ShowRelativePath = 0
-let g:Lf_HideHelp = 1
+ noremap <space>ft :<C-U><C-R>=printf("Leaderf bufTag %s", "")<CR><CR>
+ noremap <space>fl :<C-U><C-R>=printf("Leaderf line %s", "")<CR><CR>
 let g:Lf_PreviewResult = {'Function':0, 'Colorscheme':1}
 let g:Lf_PopupScheme = 'gruvbox-material'
 let g:Lf_StlSeparator = { 'left': '', 'right': '', 'font': '' }
 let g:Lf_WindowHeight = 0.30
 " let g:Lf_PopupWidth = 0.65
-let g:Lf_StlSeparator = { 'left': "\ue0b0", 'right': "\ue0b2", 'font': "DejaVu Sans Mono for Powerline" }
+" let g:Lf_StlSeparator = { 'left': "\ue0b0", 'right': "\ue0b2", 'font': "DejaVu Sans Mono for Powerline" }
+let g:Lf_StlSeparator = { 'left': '', 'right': '', 'font': '' }
 let g:Lf_PreviewResult = {'Function': 0, 'BufTag': 0 }
 let g:Lf_RootMarkers = ['.project', '.root', '.svn', '.git']
 let g:Lf_WorkingDirectoryMode = 'Ac'
@@ -200,6 +200,8 @@ let g:Lf_ShowRelativePath = 0
 let g:Lf_HideHelp = 1
 let g:Lf_StlColorscheme = 'default'
 let g:Lf_PreviewResult = {'Function':0, 'BufTag':0}
+
+
 "---------------------------------END LeaderF---------------------------------
 
 

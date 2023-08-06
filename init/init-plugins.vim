@@ -7,15 +7,16 @@ Plug 'junegunn/fzf.vim' " needed for previews
 Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
 Plug 'voldikss/vim-floaterm'
 Plug 'nvim-lua/plenary.nvim'
- Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.x' }
-Plug 'nvim-telescope/telescope-symbols.nvim'
-Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
+" Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.x' }
+"Plug 'nvim-telescope/telescope-symbols.nvim'
+"Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
 Plug 'lipingcoding/autoim.vim'
 Plug 'rlue/vim-barbaric' " 中英输入法切换
 "--------------Tiny-Tools----------------------
 " Plug 'ianding1/leetcode.vim'
 " Plug 'mbledkowski/neuleetcode.vim'
 " Plug 'github/copilot.vim'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'echasnovski/mini.nvim', { 'branch': 'stable' }
 Plug 'echasnovski/mini.indentscope', { 'branch': 'stable' }
 Plug 'glepnir/zephyr-nvim'

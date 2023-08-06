@@ -9,7 +9,7 @@ set bs=eol,start,indent
 " 打开 C/C++ 语言缩进优化
 set cindent
 " 关闭自动换行
-set nowrap
+" set nowrap
 " 打开功能键超时检测（终端下功能键为一串 ESC 开头的字符串）
 set ttimeout
 " 功能键超时检测 50 毫秒
@@ -45,9 +45,9 @@ if version >= 603
      set helplang=cn
      set encoding=utf-8
 endif
-set guifont=Hack_Mono_Nerd_Font:h20
+" set guifont=Hack_Mono_Nerd_Font:h20
 " let g:mapleader = "
-set pumblend=15 "补全菜单透明度
+" set pumblend=15 "补全菜单透明度
 
 set pumheight=10 "补全菜单太长
 set background=dark    " Setting dark mode

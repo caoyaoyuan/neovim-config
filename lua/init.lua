@@ -1,3 +1,4 @@
+vim.opt.guifont = 'Firacode Nerd Font Mono'
 require 'nvim-treesitter.configs'.setup {
     -- A list of parser names, or "all" (the five listed parsers should always be installed)
     ensure_installed = { "c", "cpp", "lua", "vim", "query", "python", "go", "gomod", "gosum", "rust", "html", "css",

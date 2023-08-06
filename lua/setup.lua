@@ -39,7 +39,7 @@ wilder.set_option('renderer', wilder.popupmenu_renderer(
         highlighter = wilder.basic_highlighter(),
         left = { ' ', wilder.popupmenu_devicons() },   -- 左侧加入icon
         right = { ' ', wilder.popupmenu_scrollbar() }, -- 右侧加入滚动条
-        border = 'rounded',
+        border = 'single',
         max_height = 17                                -- 最大高度限制 因为要计算上下 所以17支持最多15个选项
     })
 ))
@@ -58,58 +58,58 @@ vim.api.nvim_set_keymap('c', '0', '0', {}) -- 不清楚原因导致0无法使用
 vim.opt.termguicolors = true
 
 -- require 'telescope.builtin'.symbols { sources = { 'emoji', 'kaomoji', 'gitmoji' } }
-require('telescope').setup({
-    defaults = {
-        layout_config = {
-            vertical = { width = 0.5 }
-            -- other layout configuration here
-        },
-        -- other defaults configuration here
-    },
-    -- other configuration values here
-    pickers = {
-        find_files = {
-            theme = "dropdown",
-        },
-        grep_string = {
-            theme = "dropdown",
-        },
-        live_grep = {
-            theme = "dropdown",
-        },
-        buffers = {
-            theme = "dropdown",
-        },
-        help_tags = {
-            theme = "dropdown",
-        },
-        current_buffer_tags = {
-            theme = "dropdown",
-        },
-        current_buffer_fuzzy_find = {
-            theme = "dropdown",
-        }
-    },
-    extensions = {
-        fzf = {
-            fuzzy = true,                   -- false will only do exact matching
-            override_generic_sorter = true, -- override the generic sorter
-            override_file_sorter = true,    -- override the file sorter
-            case_mode = "smart_case",       -- or "ignore_case" or "respect_case"
-            -- the default case_mode is "smart_case"
-        }
-    }
-})
-_G.load_config = function()
-    require("telescope").setup()
-    require("telescope").load_extension "fzf"
-    -- ADD INIT.LUA SETTINGS THAT ARE _NECESSARY_ FOR REPRODUCING THE ISSUE
-    require("nvim-treesitter.configs").setup {
-        ensure_installed = { "lua" },
-        highlight = { enable = true },
-    }
-end
-require('telescope').load_extension('fzf')
+--require('telescope').setup({
+--    defaults = {
+--        layout_config = {
+--            vertical = { width = 0.5 }
+--            -- other layout configuration here
+--        },
+--        -- other defaults configuration here
+--    },
+--    -- other configuration values here
+--    pickers = {
+--        find_files = {
+--            theme = "dropdown",
+--        },
+--        grep_string = {
+--            theme = "dropdown",
+--        },
+--        live_grep = {
+--            theme = "dropdown",
+--        },
+--        buffers = {
+--            theme = "dropdown",
+--        },
+--        help_tags = {
+--            theme = "dropdown",
+--        },
+--        current_buffer_tags = {
+--            theme = "dropdown",
+--        },
+--        current_buffer_fuzzy_find = {
+--            theme = "dropdown",
+--        }
+--    },
+--    extensions = {
+--        fzf = {
+--            fuzzy = true,                   -- false will only do exact matching
+--            override_generic_sorter = true, -- override the generic sorter
+--            override_file_sorter = true,    -- override the file sorter
+--            case_mode = "smart_case",       -- or "ignore_case" or "respect_case"
+--            -- the default case_mode is "smart_case"
+--        }
+--    }
+--})
+--_G.load_config = function()
+--    require("telescope").setup()
+--    require("telescope").load_extension "fzf"
+--    -- ADD INIT.LUA SETTINGS THAT ARE _NECESSARY_ FOR REPRODUCING THE ISSUE
+--    require("nvim-treesitter.configs").setup {
+--        ensure_installed = { "lua" },
+--        highlight = { enable = true },
+--    }
+--end
+--require('telescope').load_extension('fzf')
 require('mini.indentscope').setup(
     {
         draw = {

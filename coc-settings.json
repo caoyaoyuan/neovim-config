@@ -3,8 +3,41 @@
   "outline.autoPreview": false,
   "list.source.files.defaultOptions": ["--number-select"],
   "suggest.formatItems": ["abbr", "menu", "kind", "shortcut"],
-  "suggest.defaultSortMethod": "length",
   "suggest.autoTrigger": "always",
+  "suggest.detailField": "abbr",
+  "suggest.virtualText": false,
+  "diagnostic.warningSign": "󰔶",
+  "diagnostic.errorSign": "",
+  "suggest.selection": "recentlyUsed",
+  "suggest.enablePreselect": true,
+  "dialog.maxWidth": 30,
+  "suggest.labelMaxLength": 30,
+  "floatFactory.floatConfig": {
+    "border": true,
+    "borderhighlight": "FloatermBorder",
+    "highlight": "PMenu",
+    "maxWidth": 40
+  },
+  "suggest.floatConfig": {
+    "highlight": "PMenu",
+    "border": true,
+    "rounded": false,
+    "borderhighlight": "FloatermBorder",
+    "maxWidth": 30
+  },
+  "suggest.pumFloatConfig": {
+    "highlight": "PMenu",
+    "border": true,
+    "borderhighlight": "FloatermBorder"
+  },
+
+  "hover.floatConfig": {
+    "border": true,
+    "borderhighlight": "FloatermBorder"
+  },
+  "suggest.removeDuplicateItems": true,
+  "diagnostic.virtualText": false,
+  "diagnostic.checkCurrentLine": true,
   "outline.autoWidth": false,
   "outline.previewMaxWidth": 30,
   "outline.detailAsDescription": false,
@@ -14,19 +47,18 @@
   "explorer.icon.enableNerdfont": true,
   "inlayHint.enable": false,
   "colors.filetypes": ["*"],
-  //"highlight.colors.enable": false,
+  "highlight.colors.enable": true,
   "python.pythonPath": "/home/joe/Anaconda/bin/python",
   "pyright.disableDiagnostics": true,
-  "diagnostic.warningSign": "󰔶",
-  "diagnostic.errorSign": "",
   "translator.proxy": "socks://127.0.0.1:1080",
   "translator.engines": ["bing", "youdao"],
-  "diagnostic.checkCurrentLine": true,
-  "diagnostic.virtualText": false,
-  "suggest.virtualText": false,
   "cmake.lsp.enable": true,
   "list.source.files.args": ["--hidden", "--files"],
-  "clangd.fallbackFlags": ["-I${workspaceForlder}", "-rdynamic"],
+  "clangd.fallbackFlags": ["-I${workspaceForlder}", "-std=c++17"],
+  "clangd.compilationDatabaseCandidates": [
+    "${workspaceForlder}/compile_commands.json",
+    "${workspaceForlder}/build/compile_commands.json"
+  ],
   "languageserver": {
     "golang": {
       "command": "gopls",
@@ -47,7 +79,6 @@
       }
     }
   },
-  "clangd.arguments": [],
   "snippets.extends": {
     "cpp": ["c"],
     "javascript": ["javascript"],
@@ -69,7 +100,8 @@
     "go",
     "python",
     "json",
-    "lua"
+    "lua",
+    "html"
   ],
   "suggest.completionItemKindLabels": {
     "function": "󰊕",
@@ -100,4 +132,5 @@
     "default": ""
   },
   "coc.preferences.extensionUpdateCheck": "daily"
+  //"snippets.ultisnips.pythonPrompt": false
 }
